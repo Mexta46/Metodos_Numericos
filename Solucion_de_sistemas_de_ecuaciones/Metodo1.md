@@ -37,4 +37,4 @@ x+y=1
 
 3x+2y=4
 5x-4y=6
-![](https://github.com/Mexta46/Metodos_Numericos/blob/main/Imagenes/Captura%20de%20pantalla%202024-03-18%20190900.png)
+![](https://github.com/Mexta46/Metodos_Numericos/blob/main/Imagenes/imagen_2024-03-18_212618505.png)
