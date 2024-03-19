@@ -13,8 +13,11 @@ Para cada iteración, el método utiliza los valores previamente estimados de la
 5. Calcular el porcentaje de error.
 6. Repetir el paso 4 hasta que el error igual al esperado.
 ### Metodologia
-9x+2y-z=-2
-7x+8y+5z=3
+
+9x+2y-z=-2 
+
+7x+8y+5z=3 
+
 3x+4y-10z=6
 ![](https://github.com/Mexta46/Metodos_Numericos/blob/main/Imagenes/Captura%20de%20pantalla%202024-03-18%20234208.png)
 ### Ejemplos
@@ -22,17 +25,22 @@ Para cada iteración, el método utiliza los valores previamente estimados de la
 ------------
 
 7x+3y=3
+
 2x+4y=10
 ![](https://github.com/Mexta46/Metodos_Numericos/blob/main/Imagenes/Captura%20de%20pantalla%202024-03-19%20000244.png)
 
 ------------
 
 5x-3y=7
+
 3x+7y=4
+
 ![](https://github.com/Mexta46/Metodos_Numericos/blob/main/Imagenes/Captura%20de%20pantalla%202024-03-19%20001213.png)
 
 ------------
 
 8x+y=1
+
 2x-5y=4
+
 ![](https://github.com/Mexta46/Metodos_Numericos/blob/main/Imagenes/imagen_2024-03-19_001958333.png)
