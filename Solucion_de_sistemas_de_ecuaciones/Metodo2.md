@@ -15,23 +15,23 @@ Una vez que la matriz aumentada está en forma escalonada, la segunda etapa del 
 2x+y-z=8
 -3x-y+2z=-11
 -2x+y+2z=-3
-![]()
+![](https://github.com/Mexta46/Metodos_Numericos/blob/main/Imagenes/Captura%20de%20pantalla%202024-03-18%20212756.png)
 ### Ejemplos
 
 ------------
 
 2x+y=0
 6x+5y=-2
-![]()
+![](https://github.com/Mexta46/Metodos_Numericos/blob/main/Imagenes/Captura%20de%20pantalla%202024-03-18%20212811.png)
 
 ------------
 
 2x+3y=7
 3x-2y=4
-![]()
+![](https://github.com/Mexta46/Metodos_Numericos/blob/main/Imagenes/Captura%20de%20pantalla%202024-03-18%20212821.png)
 
 ------------
 
 2x+3y=20
 -2x+y=4
-![]()
+![](https://github.com/Mexta46/Metodos_Numericos/blob/main/Imagenes/Captura%20de%20pantalla%202024-03-18%20212832.png)
