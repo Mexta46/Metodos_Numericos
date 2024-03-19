@@ -30,6 +30,7 @@ x-y=-2
 
 x+y=1
 -x+y=0
+
 ![](https://github.com/Mexta46/Metodos_Numericos/blob/main/Imagenes/Captura%20de%20pantalla%202024-03-18%20190853.png)
 
 ------------
