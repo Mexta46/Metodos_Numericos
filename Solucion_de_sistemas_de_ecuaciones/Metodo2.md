@@ -44,3 +44,23 @@ Una vez que la matriz aumentada está en forma escalonada, la segunda etapa del 
 -2x+y=4
 
 ![](https://github.com/Mexta46/Metodos_Numericos/blob/main/Imagenes/Captura%20de%20pantalla%202024-03-18%20212832.png)
+
+------------
+
+8x+7y-2z=2
+
+10x+4y+10z=15
+
+4x-5y+4z=9
+
+![](https://github.com/Mexta46/Metodos_Numericos/blob/main/Imagenes/Captura%20de%20pantalla%202024-03-21%20010151.png)
+
+------------
+
+4x+7y-2z=4
+
+10x+4y+9z=15
+
+5x-5y+8z=50
+
+![](https://github.com/Mexta46/Metodos_Numericos/blob/main/Imagenes/Captura%20de%20pantalla%202024-03-21%20010523.png)
