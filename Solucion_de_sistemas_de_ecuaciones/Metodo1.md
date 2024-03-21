@@ -17,6 +17,7 @@ Queremos resolver el siguiente sistema de ecuasiones:
 x-y+z=2
 x-2y+z=7
 x-y=-2
+
 ![](https://github.com/Mexta46/Metodos_Numericos/blob/main/Imagenes/Captura%20de%20pantalla%205.png)
 ### Ejemplos
 
@@ -24,6 +25,7 @@ x-y=-2
 
 2x+3y=8
 4x-2y=2
+
 ![](https://github.com/Mexta46/Metodos_Numericos/blob/main/Imagenes/Captura%20de%20pantalla%202024-03-18%20190843.png)
 
 ------------
@@ -37,4 +39,5 @@ x+y=1
 
 3x+2y=4
 5x-4y=6
+
 ![](https://github.com/Mexta46/Metodos_Numericos/blob/main/Imagenes/imagen_2024-03-18_212618505.png)
