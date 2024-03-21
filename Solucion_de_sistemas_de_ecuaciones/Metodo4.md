@@ -18,6 +18,7 @@ Lo que hace este método es reemplazar las variables que fueron calculadas en la
 2x+10y+6z=4
 
 4x+3y+9z=6
+
 ![](https://github.com/Mexta46/Metodos_Numericos/blob/main/Imagenes/Captura%20de%20pantalla%202024-03-19%20004013.png)
 ### Ejemplos
 
