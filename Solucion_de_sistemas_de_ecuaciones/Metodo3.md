@@ -19,6 +19,7 @@ Para cada iteración, el método utiliza los valores previamente estimados de la
 7x+8y+5z=3 
 
 3x+4y-10z=6
+
 ![](https://github.com/Mexta46/Metodos_Numericos/blob/main/Imagenes/Captura%20de%20pantalla%202024-03-18%20234208.png)
 ### Ejemplos
 
