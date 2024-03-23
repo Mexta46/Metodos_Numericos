@@ -45,3 +45,23 @@ x+13y=20
 x-5y=4
 
 ![](https://github.com/Mexta46/Metodos_Numericos/blob/main/Imagenes/Captura%20de%20pantalla%202024-03-19%20005402.png)
+
+------------
+
+5x-2y+z=10
+
+x+4y-2z=16
+
+3x-y+9z=9
+
+![](https://github.com/Mexta46/Metodos_Numericos/blob/main/Imagenes/imagen_2024-03-22_220629974.png)
+
+------------
+
+10x+5y-3z=11
+
+4x+20y+1z=15
+
+3x+7y+6z=6
+
+![](https://github.com/Mexta46/Metodos_Numericos/blob/main/Imagenes/imagen_2024-03-22_221053550.png)
