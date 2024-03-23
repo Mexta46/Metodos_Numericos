@@ -46,3 +46,24 @@ Para cada iteración, el método utiliza los valores previamente estimados de la
 2x-5y=4
 
 ![](https://github.com/Mexta46/Metodos_Numericos/blob/main/Imagenes/imagen_2024-03-19_001958333.png)
+
+
+------------
+
+7x+4y+4z=50
+
+3x+8y+5z=20
+
+2x+1y+10z=15
+
+![](https://github.com/Mexta46/Metodos_Numericos/blob/main/Imagenes/imagen_2024-03-22_214524697.png)
+
+------------
+
+10x-2y+9z=15
+
+x+5y-4z=2
+
+5x-y+25z=15
+
+![](https://github.com/Mexta46/Metodos_Numericos/blob/main/Imagenes/imagen_2024-03-22_215713983.png)
