@@ -46,4 +46,27 @@ except Exception as e:
 ```
 
 ## Ejemplos
-1. integral de 3x con los limites [1,2]
+
+------------
+
+1- integral de 3x con los limites [1,2] y con 5 iteraciones
+
+![](https://github.com/Mexta46/Metodos_Numericos_Tema4/blob/5c7777286b6019879cf835fdd1e5f454de3653ed/Imagenes/Ejercicio1T.png)
+
+------------
+
+2- integral de x^2 con los limites [1,3] y con 5 iteraciones
+
+![](https://github.com/Mexta46/Metodos_Numericos_Tema4/blob/5c7777286b6019879cf835fdd1e5f454de3653ed/Imagenes/Ejercicio2T.png)
+
+------------
+
+3- integral de x^3-6x^2+11x-6 con los limites [1.3,1.8] y con 1 iteración
+
+![](https://github.com/Mexta46/Metodos_Numericos_Tema4/blob/5c7777286b6019879cf835fdd1e5f454de3653ed/Imagenes/Ejercicio3T.png)
+
+------------
+
+4- integral de e^x^2 con los limites [0,1] y con 5 iteraciones
+
+![](https://github.com/Mexta46/Metodos_Numericos_Tema4/blob/5c7777286b6019879cf835fdd1e5f454de3653ed/Imagenes/Ejercicio4T.png)
