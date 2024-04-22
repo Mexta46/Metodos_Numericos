@@ -36,7 +36,13 @@ try:
     a = float(input("Ingresa el limite inferior:"))
     b = float(input("Ingresa el limite superior:"))
     n = int(input("Ingresa la cantidad de iteraciones a usar:"))
-    resultado = trapecio(a, b, n)
+    resultado = None
+    if(b<a):
+        print("El limite inferior no puede ser mayor al limite superior")
+    elif(n<=0):
+        print("El numero de intervalos debe ser mayor que cero")
+    else:
+        resultado = trapecio(a, b, n)
     if(resultado!=None):
         print(f"La aproximación de la integral definida en el intervalo [{a}, {b}] con {n} subintervalos es: {resultado}")
     else:
