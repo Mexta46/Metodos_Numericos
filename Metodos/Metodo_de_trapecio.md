@@ -80,4 +80,4 @@ except Exception as e: # captura los errores al ingresar los datos equivocados, 
 
 5- Resolver la integral con la funcion 5x^5 con los limites [1,3] y con 10 subintervalos
 
-![](https://github.com/Mexta46/Metodos_Numericos_Tema4/blob/345f3e1a51ea99663c963c5deeaa6f574daca943/Imagenes/Ejemplo5Trap.png)
+![](https://github.com/Mexta46/Metodos_Numericos_Tema4/blob/345f3e1a51ea99663c963c5deeaa6f574daca943/Imagenes/Ejemplo5Trapecio.png)
