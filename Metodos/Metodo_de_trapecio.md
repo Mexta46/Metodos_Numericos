@@ -34,11 +34,11 @@ fun = input("Ingresa la expresion algebraica con la variable x y usando el signo
 try:
     a = float(input("Ingresa el limite inferior:"))# se registra el limite inferior en la variable a
     b = float(input("Ingresa el limite superior:"))# se registra el limite superior en la variable b
-    n = int(input("Ingresa la cantidad de iteraciones a usar:"))# se registra la cantidad de iteraciones
+    n = int(input("Ingresa la cantidad de subintervalos a usar:"))# se registra la cantidad de subintervalos
     resultado = None #iniciamos la variable donde se captura el resultado y lo iniciamos con un valor nulo
     if(b<a): # evaluamos que el limite inferior no sea mayor que el superior
         print("El limite inferior no puede ser mayor al limite superior")
-    elif(n<=0): # evaluamos que la cantidad de iteraciones sea mayor que cero
+    elif(n<=0): # evaluamos que la cantidad de subintervalos sea mayor que cero
         print("El numero de intervalos debe ser mayor que cero")
     else:
         resultado = trapecio(a, b, n) # llamamos al metodo que calculara la integral por el metodo de trapecio
@@ -46,7 +46,7 @@ try:
         print(f"La aproximación de la integral definida en el intervalo [{a}, {b}] con {n} subintervalos es: {resultado}")
     else:# si de lo contrario el metodo retorna ese valor solo se mostrara un mensaje que los datos ingresados esta mal
         print("Los datos que ingresaste son incorrectos")
-except Exception as e: # captura los errores al ingresar los datos equivocados, como poner letras al ingresar los limites o la cantidad de iteraciones
+except Exception as e: # captura los errores al ingresar los datos equivocados, como poner letras al ingresar los limites o la cantidad de subintervalos
     print("Los datos que ingresaste son incorrectos")
 ```
 
@@ -54,24 +54,30 @@ except Exception as e: # captura los errores al ingresar los datos equivocados, 
 
 ------------
 
-1- integral de 3x con los limites [1,2] y con 5 iteraciones
+1- Resolver la integral con la funcion 3x con los limites [1,2] y con 5 subintervalos
 
-![](https://github.com/Mexta46/Metodos_Numericos_Tema4/blob/5c7777286b6019879cf835fdd1e5f454de3653ed/Imagenes/Ejercicio1T.png)
-
-------------
-
-2- integral de x^2 con los limites [1,3] y con 5 iteraciones
-
-![](https://github.com/Mexta46/Metodos_Numericos_Tema4/blob/5c7777286b6019879cf835fdd1e5f454de3653ed/Imagenes/Ejercicio2T.png)
+![](https://github.com/Mexta46/Metodos_Numericos_Tema4/blob/345f3e1a51ea99663c963c5deeaa6f574daca943/Imagenes/Ejemplo1Trap.png)
 
 ------------
 
-3- integral de x^3-6x^2+11x-6 con los limites [1.3,1.8] y con 1 iteración
+2- Resolver la integral con la funcion x^2 con los limites [1,3] y con 5 subintervalos
 
-![](https://github.com/Mexta46/Metodos_Numericos_Tema4/blob/5c7777286b6019879cf835fdd1e5f454de3653ed/Imagenes/Ejercicio3T.png)
+![](https://github.com/Mexta46/Metodos_Numericos_Tema4/blob/345f3e1a51ea99663c963c5deeaa6f574daca943/Imagenes/Ejemplo2Trap.png)
 
 ------------
 
-4- integral de e^x^2 con los limites [0,1] y con 5 iteraciones
+3- Resolver la integral con la funcion x^3-6x^2+11x-6 con los limites [1.3,1.8] y con 1 subintervalo
 
-![](https://github.com/Mexta46/Metodos_Numericos_Tema4/blob/5c7777286b6019879cf835fdd1e5f454de3653ed/Imagenes/Ejercicio4T.png)
+![](https://github.com/Mexta46/Metodos_Numericos_Tema4/blob/345f3e1a51ea99663c963c5deeaa6f574daca943/Imagenes/Ejemplo3Trap.png)
+
+------------
+
+4- Resolver la integral con la funcion e^x^2 con los limites [0,1] y con 5 subintervalos
+
+![](https://github.com/Mexta46/Metodos_Numericos_Tema4/blob/345f3e1a51ea99663c963c5deeaa6f574daca943/Imagenes/Ejemplo4Trap.png)
+
+------------
+
+5- Resolver la integral con la funcion 5x^5 con los limites [1,3] y con 10 subintervalos
+
+![](https://github.com/Mexta46/Metodos_Numericos_Tema4/blob/345f3e1a51ea99663c963c5deeaa6f574daca943/Imagenes/Ejemplo5Trap.png)
