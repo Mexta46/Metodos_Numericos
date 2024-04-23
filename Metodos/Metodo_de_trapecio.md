@@ -72,7 +72,7 @@ except Exception as e: # captura los errores al ingresar los datos equivocados, 
 
 ------------
 
-4- Resolver la integral con la funcion e^x^2 con los limites [0,1] y con 5 subintervalos
+4- Resolver la integral con la funcion e^x^2 con los limites [2,4] y con 5 subintervalos
 
 ![](https://github.com/Mexta46/Metodos_Numericos_Tema4/blob/345f3e1a51ea99663c963c5deeaa6f574daca943/Imagenes/Ejemplo4Trap.png)
 
