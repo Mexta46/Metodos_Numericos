@@ -2,8 +2,17 @@
 ### Definicion
 La cuadratura de Gauss aproxima el integral de una función en un intervalo [a,b] centrado en cero mediante un cálculo numérico con menos operaciones y evaluaciones de la función. Se representa como una suma ponderada:
 ![image](https://github.com/Mexta46/Metodos_Numericos_Tema4/assets/160789479/1af68233-4ecb-4052-a565-cfba89dbfec3)
+![image](https://github.com/Mexta46/Metodos_Numericos_Tema4/assets/160789479/18673eab-ce26-4360-a2fa-1b880337b241)
+
 
 ## Algoritmo
+El algoritmo se desarrolla en un tramo en el intervalo [a,b] junto a la gráfica para mostrar el concepto. Para el ejemplo el integral buscado es:
+![image](https://github.com/Mexta46/Metodos_Numericos_Tema4/assets/160789479/e7e60bc9-ee4f-4667-af94-1c0d4f6df56f)
+que usando cuadratura de Gauss con un solo intervalo[a,b] tiene como resultado:
+-----------------
+>Integral:  2.03821975687
+el resultado se puede mejorar aumentando el número de tramos en el intervalo [a,b]. Por ejemplo, el resultado usando 4 tramos el resultado es semejante al usar el método del trapecio con 128 tramos, lo que muestra el ahorro en calculos entre los métodos
+>Integral:  2.05357719003
 
 
 ## Metodologia
