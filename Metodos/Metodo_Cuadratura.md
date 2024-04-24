@@ -92,15 +92,27 @@ tramos = 4
 ----------------------
 
 4.- intervalo de integración.
+
 a = 2
+
 b = 4
+
 tramos = 4
 
 ![image](https://github.com/Mexta46/Metodos_Numericos_Tema4/assets/160789479/a57269fb-eacd-4b58-94d6-2346e8c115c4)
 
 ----------------------
 
-5.- 
+5.- intervalo de integración
+
+a = 1.3
+
+b = 1.8
+
+tramos = 4
+
+![image](https://github.com/Mexta46/Metodos_Numericos_Tema4/assets/160789479/78ad83aa-f01c-439b-8dc4-014431a27aed)
+
 
 
 
