@@ -1,5 +1,5 @@
 # Cuadratura de Gauss con Python
-### Definicion
+## Definicion
 La cuadratura de Gauss aproxima el integral de una función en un intervalo [a,b] centrado en cero mediante un cálculo numérico con menos operaciones y evaluaciones de la función. 
 
 
@@ -113,6 +113,4 @@ tramos = 4
 
 ![image](https://github.com/Mexta46/Metodos_Numericos_Tema4/assets/160789479/78ad83aa-f01c-439b-8dc4-014431a27aed)
 
-
-
-
+---------------------------
