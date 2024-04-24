@@ -1,4 +1,4 @@
-# Metodo de simpsom
+# Metodo de simpsom 1/3
 ## Definición
 El método de Simpson es una técnica de integración numérica que utiliza polinomios de segundo grado para aproximar el área bajo una curva. Se basa en dividir el área en segmentos y calcular una suma ponderada de los valores de la función en los extremos y en el punto medio de cada segmento.
 
