@@ -6,9 +6,13 @@ La cuadratura de Gauss aproxima el integral de una función en un intervalo [a,b
 
 
 ## Algoritmo
+
 El algoritmo se desarrolla en un tramo en el intervalo [a,b] junto a la gráfica para mostrar el concepto. Para el ejemplo el integral buscado es:
+
 ![image](https://github.com/Mexta46/Metodos_Numericos_Tema4/assets/160789479/e7e60bc9-ee4f-4667-af94-1c0d4f6df56f)
+
 que usando cuadratura de Gauss con un solo intervalo[a,b] tiene como resultado:
+
 -----------------
 
 >Integral:  2.03821975687
