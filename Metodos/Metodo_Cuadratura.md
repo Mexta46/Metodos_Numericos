@@ -79,9 +79,13 @@ que usando cuadratura de Gauss con un solo intervalo[a,b] tiene como resultado:
 ----------------------
 
 3.- intervalo de integración
-a = 4
+
+a = 4 
+
 b = 9
+
 tramos = 4
+
 
 ![image](https://github.com/Mexta46/Metodos_Numericos_Tema4/assets/160789479/c0840c15-10ba-4d93-a25b-2a33d8f19421)
 
