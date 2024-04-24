@@ -83,24 +83,24 @@ result = simpson38(lower_limit, upper_limit, sub_interval)
 print("El resultado de la integración por el método 3/8 de Simpson es: %0.6f" % (result) )
 ```
 
-#EJEMPLOS
+# EJEMPLOS
 
-##Ejemplo 1
+## Ejemplo 1
 
 ![](https://raw.githubusercontent.com/Mexta46/Metodos_Numericos_Tema4/main/Imagenes/sinso%208.png)
 
-##Ejemplo 2
+## Ejemplo 2
 
 ![](https://raw.githubusercontent.com/Mexta46/Metodos_Numericos_Tema4/main/Imagenes/sinso%209.png)
 
-##Ejemplo 3
+## Ejemplo 3
 
 ![](https://raw.githubusercontent.com/Mexta46/Metodos_Numericos_Tema4/main/Imagenes/sinso%2010.png)
 
-##Ejemplo 4
+## Ejemplo 4
 
 ![](https://raw.githubusercontent.com/Mexta46/Metodos_Numericos_Tema4/main/Imagenes/sinso%2011.png)
 
-##Ejemplo 5
+## Ejemplo 5
 
 ![](https://raw.githubusercontent.com/Mexta46/Metodos_Numericos_Tema4/main/Imagenes/sinso%2012.png)
