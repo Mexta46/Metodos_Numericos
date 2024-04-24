@@ -10,8 +10,15 @@ El algoritmo se desarrolla en un tramo en el intervalo [a,b] junto a la gráfica
 ![image](https://github.com/Mexta46/Metodos_Numericos_Tema4/assets/160789479/e7e60bc9-ee4f-4667-af94-1c0d4f6df56f)
 que usando cuadratura de Gauss con un solo intervalo[a,b] tiene como resultado:
 -----------------
+
 >Integral:  2.03821975687
+
+---------------------
+
 el resultado se puede mejorar aumentando el número de tramos en el intervalo [a,b]. Por ejemplo, el resultado usando 4 tramos el resultado es semejante al usar el método del trapecio con 128 tramos, lo que muestra el ahorro en calculos entre los métodos
+
+----------------------
+
 >Integral:  2.05357719003
 
 
