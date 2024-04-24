@@ -39,11 +39,11 @@ def integraCuadGauss2p(funcionx,a,b):
     x1 = -x0
     xa = (b+a)/2 + (b-a)/2*(x0)
     xb = (b+a)/2 + (b-a)/2*(x1)
-    area = ((b-a)/2)*(funcionx(xa) + funcionx(xb))
+    area = ((b-a)/2)*(funcionx(xa) + funcionx(xb)) #se calcula el area
     return(area)        #retorna area
 
                     # INGRESO
-fx = lambda x: np.sqrt(x)*np.sin(x)
+fx = lambda x: np.sqrt(x)*np.sin(x)  
 
                     # intervalo de integración
 a = 1                    #intervalo a
