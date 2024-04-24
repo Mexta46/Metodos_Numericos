@@ -8,8 +8,11 @@ La cuadratura de Gauss aproxima el integral de una función en un intervalo [a,b
 El algoritmo se desarrolla en un tramo en el intervalo [a,b] junto a la gráfica para mostrar el concepto. 
 
 Se representa como una suma ponderada:
+
 ![image](https://github.com/Mexta46/Metodos_Numericos_Tema4/assets/160789479/1af68233-4ecb-4052-a565-cfba89dbfec3)
+
 ![image](https://github.com/Mexta46/Metodos_Numericos_Tema4/assets/160789479/18673eab-ce26-4360-a2fa-1b880337b241)
+
 
 ## Metodologia
 ```python
