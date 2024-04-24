@@ -56,6 +56,8 @@ print('Integral: ', area)
 
 ----------------------
 
+Instrucciones usando la cuadratura de Gauss como una función
+
 1.- Para el ejemplo el integral buscado es:
 
 ![image](https://github.com/Mexta46/Metodos_Numericos_Tema4/assets/160789479/e7e60bc9-ee4f-4667-af94-1c0d4f6df56f)
@@ -66,8 +68,25 @@ que usando cuadratura de Gauss con un solo intervalo[a,b] tiene como resultado:
 
 ---------------------
 
-El resultado se puede mejorar aumentando el número de tramos en el intervalo [a,b]. Por ejemplo, el resultado usando 4 tramos el resultado es semejante al usar el método del trapecio con 128 tramos, lo que muestra el ahorro en calculos entre los métodos
+2.- El resultado se puede mejorar aumentando el número de tramos en el intervalo [a,b]. Por ejemplo, el resultado usando 4 tramos el resultado es semejante al usar el método del trapecio con 128 tramos, lo que muestra el ahorro en calculos entre los métodos
 
 ----------------------
 
 >Integral:  2.05357719003
+
+![image](https://github.com/Mexta46/Metodos_Numericos_Tema4/assets/160789479/3c656246-45b8-408b-9c74-d3d0ec721241)
+
+----------------------
+
+3.- intervalo de integración
+a = 4
+b = 9
+tramos = 4
+
+![image](https://github.com/Mexta46/Metodos_Numericos_Tema4/assets/160789479/c0840c15-10ba-4d93-a25b-2a33d8f19421)
+
+----------------------
+
+4.-
+
+
