@@ -55,6 +55,7 @@ except Exception as e: # captura los errores al ingresar los datos equivocados, 
 ------------
 
 1- Resolver la integral con la funcion 3x con los limites [1,2] y con 5 subintervalos
+
 Solución:
 
 ![](https://github.com/Mexta46/Metodos_Numericos_Tema4/blob/345f3e1a51ea99663c963c5deeaa6f574daca943/Imagenes/Ejemplo1Trap.png)
@@ -62,6 +63,7 @@ Solución:
 ------------
 
 2- Resolver la integral con la funcion x^2 con los limites [1,3] y con 5 subintervalos
+
 Solución:
 
 ![](https://github.com/Mexta46/Metodos_Numericos_Tema4/blob/345f3e1a51ea99663c963c5deeaa6f574daca943/Imagenes/Ejemplo2Trap.png)
@@ -69,6 +71,7 @@ Solución:
 ------------
 
 3- Resolver la integral con la funcion x^3-6x^2+11x-6 con los limites [1.3,1.8] y con 1 subintervalo
+
 Solución:
 
 ![](https://github.com/Mexta46/Metodos_Numericos_Tema4/blob/345f3e1a51ea99663c963c5deeaa6f574daca943/Imagenes/Ejemplo3Trap.png)
@@ -76,6 +79,7 @@ Solución:
 ------------
 
 4- Resolver la integral con la funcion e^x^2 con los limites [2,4] y con 5 subintervalos
+
 Solución:
 
 ![](https://github.com/Mexta46/Metodos_Numericos_Tema4/blob/345f3e1a51ea99663c963c5deeaa6f574daca943/Imagenes/Ejemplo4Trap.png)
@@ -83,6 +87,7 @@ Solución:
 ------------
 
 5- Resolver la integral con la funcion 5x^5 con los limites [1,3] y con 10 subintervalos
+
 Solución:
 
 ![](https://github.com/Mexta46/Metodos_Numericos_Tema4/blob/0bf1ee7addb631c179cdbaa6d911b74338397114/Imagenes/Ejemplo5Trapecio.png)
