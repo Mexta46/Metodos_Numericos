@@ -64,4 +64,8 @@ print("Aproximación de la integral:", result)
 ![](https://github.com/Mexta46/Metodos_Numericos_Tema4/blob/main/Imagenes/simpson4.png)
 ## Ejemplo 3
 ![](https://github.com/Mexta46/Metodos_Numericos_Tema4/blob/main/Imagenes/simpson5.png)
+## Ejemplo 4 
+![](https://github.com/Mexta46/Metodos_Numericos_Tema4/blob/main/Imagenes/simpson6.png)
+## Ejemplo 5
+![](https://github.com/Mexta46/Metodos_Numericos_Tema4/blob/main/Imagenes/simpson7.png)
 
