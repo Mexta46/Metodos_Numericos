@@ -3,7 +3,6 @@
 ![](https://github.com/Mexta46/Metodos_Numericos_Tema4/blob/main/Imagenes/simpson1.png)
 El método de Simpson es una técnica de integración numérica que utiliza polinomios de segundo grado para aproximar el área bajo una curva. Se basa en dividir el área en segmentos y calcular una suma ponderada de los valores de la función en los extremos y en el punto medio de cada segmento.
 ## Algoritmo
-
 1. f(x) que se desea integrar.
 2. Especificar el intervalo de integración,[a,b].
 3. Dividir el intervalo [a,b] en n subintervalos de igual tamaño, donde n es un número par.
@@ -13,10 +12,10 @@ El método de Simpson es una técnica de integración numérica que utiliza poli
 7. Aplicar la fórmula de Simpson para calcular la aproximación de la integral:
 ![](https://github.com/Mexta46/Metodos_Numericos_Tema4/blob/main/Imagenes/simpson2.png)
 8. Devolver el valor calculado como la aproximación de la integral.
-
-
+#/
 ##Metodología 
-```
+#
+```python
 <?php
 
 // Definir la función a integrar
