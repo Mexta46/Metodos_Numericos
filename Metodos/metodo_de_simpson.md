@@ -1,7 +1,8 @@
 # Metodo de simpsom
 ## Definición
-![](https://github.com/Mexta46/Metodos_Numericos_Tema4/blob/main/Imagenes/simpson1.png)
 El método de Simpson es una técnica de integración numérica que utiliza polinomios de segundo grado para aproximar el área bajo una curva. Se basa en dividir el área en segmentos y calcular una suma ponderada de los valores de la función en los extremos y en el punto medio de cada segmento.
+
+![](https://github.com/Mexta46/Metodos_Numericos_Tema4/blob/main/Imagenes/simpson1.png)
 ## Algoritmo
 1. f(x) que se desea integrar.
 2. Especificar el intervalo de integración,[a,b].
