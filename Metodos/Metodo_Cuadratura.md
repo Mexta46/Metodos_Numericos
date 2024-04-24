@@ -64,6 +64,8 @@ Instrucciones usando la cuadratura de Gauss como una función
 
 que usando cuadratura de Gauss con un solo intervalo[a,b] tiene como resultado:
 
+![image](https://github.com/Mexta46/Metodos_Numericos_Tema4/assets/160789479/1d5a68e8-83cb-4a10-a765-c571b2d7a935)
+
 >Integral:  2.03821975687
 
 ---------------------
