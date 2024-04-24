@@ -7,9 +7,20 @@ La cuadratura de Gauss aproxima el integral de una función en un intervalo [a,b
 
 El algoritmo se desarrolla en un tramo en el intervalo [a,b] junto a la gráfica para mostrar el concepto. 
 
-Se representa como una suma ponderada:
+1.- Elección de los nodos y pesos: Elige los nodos X𝑖 y sus correspondientes pesos W𝑖​. Estos nodos y pesos están predefinidos para diferentes grados de precisión y se pueden encontrar en tablas.
 
-![image](https://github.com/Mexta46/Metodos_Numericos_Tema4/assets/160789479/1af68233-4ecb-4052-a565-cfba89dbfec3)
+2.- Transformación del intervalo de integración: Si la integral está definida en un intervalo [a,b]. diferente de [−1,1], es necesario transformarla al intervalo
+[−1,1]. Esto se hace mediante una transformación lineal: ![image](https://github.com/Mexta46/Metodos_Numericos_Tema4/assets/160789479/7ef3e576-5664-4405-9e82-80bf49f6384b)
+
+3.- Evaluación de la integral aproximada: Utiliza la fórmula de cuadratura de Gauss para calcular la aproximación de la integral: ![image](https://github.com/Mexta46/Metodos_Numericos_Tema4/assets/160789479/8145aed4-2e4a-45d9-a5d2-e20dc9f3f3f8) es la función que se está integrando.
+
+4.- Transformación del resultado (opcional): Si has transformado el intervalo de integración en el paso 2, es posible que necesites transformar el resultado de vuelta al intervalo original. Esto se hace aplicando la transformación inversa.
+
+5.- Calcular el error (opcional): Si conoces la fórmula del error para la cuadratura de Gauss, puedes calcular el error de aproximación. Por lo general, el error disminuye exponencialmente con el número de nodos.
+
+6.- Iteración (opcional): Si la precisión deseada no se alcanza con el número de nodos elegidos inicialmente, puedes aumentar el número de nodos y repetir el proceso.
+
+Es importante tener en cuenta que la elección adecuada de los nodos y pesos depende de la función que estés integrando y del grado de precisión que necesites.
 
 ![image](https://github.com/Mexta46/Metodos_Numericos_Tema4/assets/160789479/18673eab-ce26-4360-a2fa-1b880337b241)
 
