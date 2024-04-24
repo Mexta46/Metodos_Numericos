@@ -12,52 +12,55 @@ El método de Simpson es una técnica de integración numérica que utiliza poli
 7. Aplicar la fórmula de Simpson para calcular la aproximación de la integral:
 ![](https://github.com/Mexta46/Metodos_Numericos_Tema4/blob/main/Imagenes/simpson2.png)
 8. Devolver el valor calculado como la aproximación de la integral.
-#/
-##Metodología 
-#
+
+
+## Metodología 
+
 ```python
-<?php
+import math
 
-// Definir la función a integrar
-function f($x) {
-    return /* Definir la función aquí */;
-}
+# Definir la función a integrar
+def f(x):
+    return math.sin(x)  # Función trigonométrica: sin(x)
 
-// Método de Simpson para aproximar la integral
-function simpson($a, $b, $n) {
-    // Calcular el ancho de cada subintervalo
-    $h = ($b - $a) / $n;
-    // Sumar el valor de la función en los extremos
-    $sum = f($a) + f($b);
+# Método de Simpson para aproximar la integral
+def simpson(a, b, n):
+    # Calcular el ancho de cada subintervalo
+    h = (b - a) / n
+    # Sumar el valor de la función en los extremos
+    sum = f(a) + f(b)
     
-    // Calcular la suma de los valores de la función en los puntos medios
-    for ($i = 1; $i < $n; $i++) {
-        // Calcular el valor de x en el punto medio del subintervalo
-        $x = $a + $i * $h;
-        // Aplicar la regla de Simpson (ponderar por 2 o 4 según el índice)
-        if ($i % 2 == 0) {
-            $sum += 2 * f($x);
-        } else {
-            $sum += 4 * f($x);
-        }
-    }
+    # Calcular la suma de los valores de la función en los puntos medios
+    for i in range(1, n):
+        # Calcular el valor de x en el punto medio del subintervalo
+        x = a + i * h
+        # Aplicar la regla de Simpson (ponderar por 2 o 4 según el índice)
+        if i % 2 == 0:
+            sum += 2 * f(x)
+        else:
+            sum += 4 * f(x)
     
-    // Devolver el resultado de la aproximación de la integral
-    return $h * $sum / 3;
-}
+    # Devolver el resultado de la aproximación de la integral
+    return h * sum / 3
 
-// Intervalo de integración y número de subintervalos
-$a = /* valor de 'a' */;
-$b = /* valor de 'b' */;
-$n = /* número de subintervalos (debe ser par) */;
+# Intervalo de integración y número de subintervalos
+a = 0   # Límite inferior del intervalo
+b = math.pi   # Límite superior del intervalo (pi)
+n = 10  # Número de subintervalos (par)
 
-// Calcular la aproximación de la integral
-$result = simpson($a, $b, $n);
+# Calcular la aproximación de la integral
+result = simpson(a, b, n)
 
-// Mostrar el resultado de la aproximación de la integral
-echo "Aproximación de la integral: " . $result;
-
-?>
+# Mostrar el resultado de la aproximación de la integral
+print("Aproximación de la integral:", result)
 ```
 
-##Ejemplos
+# Ejemplos
+
+## Ejemplo 1
+![](https://github.com/Mexta46/Metodos_Numericos_Tema4/blob/main/Imagenes/simpson3.png)
+## Ejemplo 2
+![](https://github.com/Mexta46/Metodos_Numericos_Tema4/blob/main/Imagenes/simpson4.png)
+## Ejemplo 3
+![](https://github.com/Mexta46/Metodos_Numericos_Tema4/blob/main/Imagenes/simpson5.png)
+
