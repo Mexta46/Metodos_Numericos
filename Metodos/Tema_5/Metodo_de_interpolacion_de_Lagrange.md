@@ -1,20 +1,12 @@
-# Interpolacion de Newton
+# Interpolacion de Lagrange
 ## Definición
-La interpolación de Newton es un método numérico utilizado para construir un polinomio de grado n que pase por un conjunto de n+1 puntos dados (x0, y0), (x1, y1), ..., (xn, yn). Este polinomio interpolante, denotado como P(x), se expresa en la forma de Newton:
-P(x) = y0 + a1(x - x0) + a2(x - x0)(x - x1) + ... + an(x - x0)(x - x1)...(x - xn-1)
-donde los coeficientes a1, a2, ..., an se conocen como diferencias divididas y se calculan a partir de los puntos dados.
-Las diferencias divididas se definen recursivamente de la siguiente manera:
-
-f[x0] = y0
-f[x0, x1] = (y1 - y0) / (x1 - x0)
-f[x0, x1, x2] = (f[x1, x2] - f[x0, x1]) / (x2 - x0)
-...
-f[x0, x1, ..., xn] = (f[x1, x2, ..., xn] - f[x0, x1, ..., xn-1]) / (xn - x0)
-
-Así, las diferencias divididas representan las pendientes sucesivas de las secantes que unen los puntos dados.
+La interpolación de Lagrange es un método numérico utilizado para encontrar el polinomio único de grado n que pasa por un conjunto de n+1 puntos dados (x0, y0), (x1, y1), ..., (xn, yn). Este polinomio interpolante, denotado como P(x), se expresa como una combinación lineal de polinomios base llamados polinomios de Lagrange:
+P(x) = y0L0(x) + y1L1(x) + ... + ynLn(x)
+donde los polinomios de Lagrange Li(x) se definen como:
+Li(x) = ((x - x0) / (xi - x0)) * ((x - x1) / (xi - x1)) * ... * ((x - xi-1) / (xi - xi-1)) * ((x - xi+1) / (xi - xi+1)) * ... * ((x - xn) / (xi - xn))
+Estos polinomios de Lagrange tienen la propiedad de que Li(xj) = 0 para todo j ≠ i, y Li(xi) = 1.
 ## Algoritmo
 1. Obtener los puntos (x0, y0), (x1, y1), ..., (xn, yn).
-2. Construir una tabla de diferencias divididas de (n+1) filas y (n+1) columnas.
-3. Inicializar la primera columna de la tabla con los valores y0, y1, ..., yn.
-4. Calcular las diferencias divididas f[x0, x1], f[x0, x1, x2], ..., f[x0, x1, ..., xn] usando la definición recursiva y llenar la tabla de diferencias divididas.
-3. Evaluar el polinomio interpolante P(x) en el punto deseado x utilizando la fórmula de Newton y las diferencias divididas calculadas.
+2. Para cada punto (xi, yi): a. Inicializar el polinomio de Lagrange Li(x) = 1. b. Para cada j desde 0 hasta n, j ≠ i: Li(x) = Li(x) * ((x - xj) / (xi - xj))
+3. Construir el polinomio interpolante P(x) como la suma ponderada de los polinomios de Lagrange: P(x) = y0L0(x) + y1L1(x) + ... + ynLn(x)
+4. Evaluar el polinomio interpolante P(x) en el punto deseado x_eval.
