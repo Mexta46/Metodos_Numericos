@@ -19,6 +19,10 @@ Tema 3: Métodos de solución de sistemas de ecuaciones
 ------------
 
 Tema 4:  Diferenciación e integración numérica
+1. [Metodo cuadratura](Metodos/Tema_4/Metodo_Cuadratura.md)
+2. [Metodo de simpson 1/3](Metodos/Tema_4/Metodo_de_simpson_1_3.md)
+3. [Metodo de simpson 3/8](Metodos/Tema_4/Metodo_de_simpson_3_8.md)
+4. [Metodo de trapecio](Metodos/Tema_4/Metodo_de_trapecio.md)
 
 ------------
 
