@@ -1,6 +1,6 @@
 # Metodo de Simpson 3/8
 
-![](https://raw.githubusercontent.com/Mexta46/Metodos_Numericos_Tema4/main/Imagenes/sinso%206.png)
+![](https://raw.githubusercontent.com/Mexta46/Metodos_Numericos_Tema4/main/Imagenes/Imagenes_Tema4/sinso%206.png)
 
 ## Definicion
 
@@ -8,7 +8,7 @@ El método de Simpson 3/8 es un método numérico para aproximar la integral def
 
 La fórmula del método de Simpson 3/8 es la siguiente:
 
-![](https://raw.githubusercontent.com/Mexta46/Metodos_Numericos_Tema4/main/Imagenes/sinso%207.png)
+![](https://raw.githubusercontent.com/Mexta46/Metodos_Numericos_Tema4/main/Imagenes/Imagenes_Tema4/sinso%207.png)
 
 ## Algoritmo
 
@@ -87,20 +87,20 @@ print("El resultado de la integración por el método 3/8 de Simpson es: %0.6f" 
 
 ## Ejemplo 1
 
-![](https://raw.githubusercontent.com/Mexta46/Metodos_Numericos_Tema4/main/Imagenes/sinso%208.png)
+![](https://raw.githubusercontent.com/Mexta46/Metodos_Numericos_Tema4/main/Imagenes/Imagenes_Tema4/sinso%208.png)
 
 ## Ejemplo 2
 
-![](https://raw.githubusercontent.com/Mexta46/Metodos_Numericos_Tema4/main/Imagenes/sinso%209.png)
+![](https://raw.githubusercontent.com/Mexta46/Metodos_Numericos_Tema4/main/Imagenes/Imagenes_Tema4/sinso%209.png)
 
 ## Ejemplo 3
 
-![](https://raw.githubusercontent.com/Mexta46/Metodos_Numericos_Tema4/main/Imagenes/sinso%2010.png)
+![](https://raw.githubusercontent.com/Mexta46/Metodos_Numericos_Tema4/main/Imagenes/Imagenes_Tema4/sinso%2010.png)
 
 ## Ejemplo 4
 
-![](https://raw.githubusercontent.com/Mexta46/Metodos_Numericos_Tema4/main/Imagenes/sinso%2011.png)
+![](https://raw.githubusercontent.com/Mexta46/Metodos_Numericos_Tema4/main/Imagenes/Imagenes_Tema4/sinso%2011.png)
 
 ## Ejemplo 5
 
-![](https://raw.githubusercontent.com/Mexta46/Metodos_Numericos_Tema4/main/Imagenes/sinso%2012.png)
+![](https://raw.githubusercontent.com/Mexta46/Metodos_Numericos_Tema4/main/Imagenes/Imagenes_Tema4/sinso%2012.png)
