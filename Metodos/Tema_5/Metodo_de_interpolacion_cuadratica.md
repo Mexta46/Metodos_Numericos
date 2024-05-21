@@ -73,6 +73,128 @@ plt.legend()
 plt.title('Interpolación Cuadrática')
 plt.show()
 ```
+### Ejercicio 2
+Dado los puntos conocidos \((1, 3)\), \((2, 8)\), y \((3, 15)\), encuentra el polinomio cuadrático que pasa por estos puntos y grafica la interpolación cuadrática resultante.
+
+```python
+import numpy as np
+import matplotlib.pyplot as plt
+
+# Definir los puntos conocidos
+x0, y0 = 1, 3
+x1, y1 = 2, 8
+x2, y2 = 3, 15
+
+# Encontrar los coeficientes del polinomio cuadrático
+a, b, c = interpolacion_cuadratica(x0, y0, x1, y1, x2, y2)
+
+# Definir la función del polinomio cuadrático
+def P(x):
+    return a*x**2 + b*x + c
+
+# Definir los puntos donde se desea estimar los valores
+x_nuevo = np.linspace(1, 3, 100)
+y_nuevo = P(x_nuevo)
+
+# Graficar los puntos conocidos y el polinomio cuadrático de interpolación
+plt.plot([x0, x1, x2], [y0, y1, y2], 'o', label='Puntos conocidos')
+plt.plot(x_nuevo, y_nuevo, '-', label='Interpolación cuadrática')
+plt.xlabel('x')
+plt.ylabel('y')
+plt.legend()
+plt.title('Interpolación Cuadrática - Ejercicio 1')
+plt.show()
+```
+
+### Ejercicio 3
+Dado los puntos conocidos \((-1, 0)\), \((0, 1)\), y \((1, 0)\), encuentra el polinomio cuadrático que pasa por estos puntos y grafica la interpolación cuadrática resultante.
+
+```python
+# Definir los puntos conocidos
+x0, y0 = -1, 0
+x1, y1 = 0, 1
+x2, y2 = 1, 0
+
+# Encontrar los coeficientes del polinomio cuadrático
+a, b, c = interpolacion_cuadratica(x0, y0, x1, y1, x2, y2)
+
+# Definir la función del polinomio cuadrático
+def P(x):
+    return a*x**2 + b*x + c
+
+# Definir los puntos donde se desea estimar los valores
+x_nuevo = np.linspace(-1, 1, 100)
+y_nuevo = P(x_nuevo)
+
+# Graficar los puntos conocidos y el polinomio cuadrático de interpolación
+plt.plot([x0, x1, x2], [y0, y1, y2], 'o', label='Puntos conocidos')
+plt.plot(x_nuevo, y_nuevo, '-', label='Interpolación cuadrática')
+plt.xlabel('x')
+plt.ylabel('y')
+plt.legend()
+plt.title('Interpolación Cuadrática - Ejercicio 2')
+plt.show()
+```
+
+### Ejercicio 4
+Dado los puntos conocidos \((-2, 1)\), \((0, -1)\), y \((2, 5)\), encuentra el polinomio cuadrático que pasa por estos puntos y grafica la interpolación cuadrática resultante.
+
+```python
+# Definir los puntos conocidos
+x0, y0 = -2, 1
+x1, y1 = 0, -1
+x2, y2 = 2, 5
+
+# Encontrar los coeficientes del polinomio cuadrático
+a, b, c = interpolacion_cuadratica(x0, y0, x1, y1, x2, y2)
+
+# Definir la función del polinomio cuadrático
+def P(x):
+    return a*x**2 + b*x + c
+
+# Definir los puntos donde se desea estimar los valores
+x_nuevo = np.linspace(-2, 2, 100)
+y_nuevo = P(x_nuevo)
+
+# Graficar los puntos conocidos y el polinomio cuadrático de interpolación
+plt.plot([x0, x1, x2], [y0, y1, y2], 'o', label='Puntos conocidos')
+plt.plot(x_nuevo, y_nuevo, '-', label='Interpolación cuadrática')
+plt.xlabel('x')
+plt.ylabel('y')
+plt.legend()
+plt.title('Interpolación Cuadrática - Ejercicio 3')
+plt.show()
+```
+
+### Ejercicio 5
+Dado los puntos conocidos \((-3, 1)\), \((0, 2)\), y \((3, 1)\), encuentra el polinomio cuadrático que pasa por estos puntos y grafica la interpolación cuadrática resultante.
+
+```python
+# Definir los puntos conocidos
+x0, y0 = -3, 1
+x1, y1 = 0, 2
+x2, y2 = 3, 1
+
+# Encontrar los coeficientes del polinomio cuadrático
+a, b, c = interpolacion_cuadratica(x0, y0, x1, y1, x2, y2)
+
+# Definir la función del polinomio cuadrático
+def P(x):
+    return a*x**2 + b*x + c
+
+# Definir los puntos donde se desea estimar los valores
+x_nuevo = np.linspace(-3, 3, 100)
+y_nuevo = P(x_nuevo)
+
+# Graficar los puntos conocidos y el polinomio cuadrático de interpolación
+plt.plot([x0, x1, x2], [y0, y1, y2], 'o', label='Puntos conocidos')
+plt.plot(x_nuevo, y_nuevo, '-', label='Interpolación cuadrática')
+plt.xlabel('x')
+plt.ylabel('y')
+plt.legend()
+plt.title('Interpolación Cuadrática - Ejercicio 4')
+plt.show()
+```
 
 ### Resultados y Análisis
 El código anterior aplica la interpolación cuadrática a tres puntos conocidos \((0, 1)\), \((1, 3)\), y \((2, 2)\). Se determina el polinomio cuadrático que pasa por estos puntos y se utiliza para estimar valores intermedios.
