@@ -19,7 +19,7 @@ Así, las diferencias divididas representan las pendientes sucesivas de las seca
 4. Calcular las diferencias divididas f[x0, x1], f[x0, x1, x2], ..., f[x0, x1, ..., xn] usando la definición recursiva y llenar la tabla de diferencias divididas.
 3. Evaluar el polinomio interpolante P(x) en el punto deseado x utilizando la fórmula de Newton y las diferencias divididas calculadas.
 ## Metodologia
-´´´Python
+```python
 def Verificador(x, y): # Verifica si los puntos x son únicos para no dar un resultado de divicion por cero y calcula los coeficientes del polinomio interpolante de Newton
     n = len(x) #se define una lista con los valores de x
     coeficiente = [0] * n #se pasa la lista 
@@ -66,7 +66,7 @@ try:
 
 except ValueError as e:
     print(f"Error: {e}")
-´´´
+```
 
 ------
 
@@ -86,7 +86,8 @@ Ejercicio 1 resuelto: se usaran los parametros
 - y3: 45
 - valor de x: 5
 **Resultado**
-![](Imagenes\Imagenes_tema5\IN1.png)
+
+![](https://github.com/Mexta46/Metodos_Numericos/blob/9e22efabf9c8dad6b9be0ecdd8d9af81d3d70575/Imagenes/Imagenes_tema5/IN1.png)
 
 ------
 
@@ -98,7 +99,8 @@ Ejercicio 2 resuelto: usando los parametros
 - y1: 17
 - valor de x:24
 **Resultado**
-![](Imagenes/Imagenes_tema5/IN2.png)
+
+![](https://github.com/Mexta46/Metodos_Numericos/blob/9e22efabf9c8dad6b9be0ecdd8d9af81d3d70575/Imagenes/Imagenes_tema5/IN2.png)
 
 -------
 
@@ -116,7 +118,8 @@ Ejercicio 3 resuelto: usando los valores
 - y4: 20
 - valor de x: 7
 **Resultado**
-![](Imagenes/Imagenes_tema5/IN3.png)
+
+![](https://github.com/Mexta46/Metodos_Numericos/blob/9e22efabf9c8dad6b9be0ecdd8d9af81d3d70575/Imagenes/Imagenes_tema5/IN3.png)
 
 --------
 
@@ -127,8 +130,11 @@ Ejercicio 4 resuelto: usando los parametros
 - x1: 12
 - y1: 13
 - valor de x:21
+
 **Resultado**
-![](Imagenes/Imagenes_tema5/IN4.png)
+![](https://github.com/Mexta46/Metodos_Numericos/blob/9e22efabf9c8dad6b9be0ecdd8d9af81d3d70575/Imagenes/Imagenes_tema5/IN4.png)
+
+--------
 
 Ejercicio 5 resuelto: usando los parametros
 - numero de puntos: 3
@@ -139,5 +145,6 @@ Ejercicio 5 resuelto: usando los parametros
 - x2: 112
 - y2: 80
 - valor de x:15
+
 **Resultado**
-![](Imagenes\Imagenes_tema5\IN5.png)
+![](https://github.com/Mexta46/Metodos_Numericos/blob/9e22efabf9c8dad6b9be0ecdd8d9af81d3d70575/Imagenes/Imagenes_tema5/IN5.png)
