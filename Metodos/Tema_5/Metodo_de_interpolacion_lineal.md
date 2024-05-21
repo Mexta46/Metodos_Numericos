@@ -38,8 +38,11 @@ RESULTADO
 ### Ejercicio 2
 
 x0=1984
+
 y0=3000
+
 x1=1989
+
 y1=4100
 
 x= 1986
@@ -50,12 +53,46 @@ RESULTADO
 ### Ejercicio 3 
 
 x0= 0
+
 y0=36
+
 x1=5
+
 y1=37
+
+x= 3.5
 
 RESULTADO
 ![lineal2](https://github.com/Mexta46/Metodos_Numericos/assets/169117716/4f8b007b-8f77-49db-82f3-602991185d1b)
 
+### Ejercicio 4 
+
+x0= 0.6
+
+y0=124
+
+x1=1.8
+
+y1=69
+
+x= 1.5
+
+RESULTADO
+![4](https://github.com/Mexta46/Metodos_Numericos/assets/169117716/fcfc88d3-bcfb-4df4-8a2d-81d7d62423f1)
+
+### Ejersicio 5 
+
+x0= 5
+
+y0=49
+
+x1=25
+
+y1=352
+
+x= 12
+
+RESULTADO
+![6](https://github.com/Mexta46/Metodos_Numericos/assets/169117716/4e3cd1cb-58c3-48b3-9e40-912aaa2ec066)
 
 
