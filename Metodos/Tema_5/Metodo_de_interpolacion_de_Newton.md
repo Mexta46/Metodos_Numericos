@@ -1,4 +1,5 @@
 # Interpolacion de Newton
+
 ## Definición
 La interpolación de Newton es un método numérico utilizado para construir un polinomio de grado n que pase por un conjunto de n+1 puntos dados (x0, y0), (x1, y1), ..., (xn, yn). Este polinomio interpolante, denotado como P(x), se expresa en la forma de Newton:
 P(x) = y0 + a1(x - x0) + a2(x - x0)(x - x1) + ... + an(x - x0)(x - x1)...(x - xn-1)
@@ -12,12 +13,14 @@ f[x0, x1, x2] = (f[x1, x2] - f[x0, x1]) / (x2 - x0)
 f[x0, x1, ..., xn] = (f[x1, x2, ..., xn] - f[x0, x1, ..., xn-1]) / (xn - x0)
 
 Así, las diferencias divididas representan las pendientes sucesivas de las secantes que unen los puntos dados.
+
 ## Algoritmo
 1. Obtener los puntos (x0, y0), (x1, y1), ..., (xn, yn).
 2. Construir una tabla de diferencias divididas de (n+1) filas y (n+1) columnas.
 3. Inicializar la primera columna de la tabla con los valores y0, y1, ..., yn.
 4. Calcular las diferencias divididas f[x0, x1], f[x0, x1, x2], ..., f[x0, x1, ..., xn] usando la definición recursiva y llenar la tabla de diferencias divididas.
 3. Evaluar el polinomio interpolante P(x) en el punto deseado x utilizando la fórmula de Newton y las diferencias divididas calculadas.
+
 ## Metodologia
 ```python
 def Verificador(x, y): # Verifica si los puntos x son únicos para no dar un resultado de divicion por cero y calcula los coeficientes del polinomio interpolante de Newton
@@ -85,6 +88,7 @@ Ejercicio 1 resuelto: se usaran los parametros
 - x3: 34
 - y3: 45
 - valor de x: 5
+
 **Resultado**
 
 ![](https://github.com/Mexta46/Metodos_Numericos/blob/9e22efabf9c8dad6b9be0ecdd8d9af81d3d70575/Imagenes/Imagenes_tema5/IN1.png)
@@ -97,7 +101,8 @@ Ejercicio 2 resuelto: usando los parametros
 - y0: 16
 - x1: 15
 - y1: 17
-- valor de x:24
+- valor de x: 25
+
 **Resultado**
 
 ![](https://github.com/Mexta46/Metodos_Numericos/blob/9e22efabf9c8dad6b9be0ecdd8d9af81d3d70575/Imagenes/Imagenes_tema5/IN2.png)
@@ -117,6 +122,7 @@ Ejercicio 3 resuelto: usando los valores
 - x4: 14
 - y4: 20
 - valor de x: 7
+
 **Resultado**
 
 ![](https://github.com/Mexta46/Metodos_Numericos/blob/9e22efabf9c8dad6b9be0ecdd8d9af81d3d70575/Imagenes/Imagenes_tema5/IN3.png)
@@ -129,9 +135,10 @@ Ejercicio 4 resuelto: usando los parametros
 - y0: 8
 - x1: 12
 - y1: 13
-- valor de x:21
+- valor de x: 21
 
 **Resultado**
+
 ![](https://github.com/Mexta46/Metodos_Numericos/blob/9e22efabf9c8dad6b9be0ecdd8d9af81d3d70575/Imagenes/Imagenes_tema5/IN4.png)
 
 --------
@@ -144,7 +151,8 @@ Ejercicio 5 resuelto: usando los parametros
 - y1: 79
 - x2: 112
 - y2: 80
-- valor de x:15
+- valor de x: 15
 
 **Resultado**
+
 ![](https://github.com/Mexta46/Metodos_Numericos/blob/9e22efabf9c8dad6b9be0ecdd8d9af81d3d70575/Imagenes/Imagenes_tema5/IN5.png)
