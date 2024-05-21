@@ -7,8 +7,12 @@ La interpolación cuadrática es una técnica matemática utilizada para estimar
 Esta ecuación le permite estimar el comportamiento de la función entre los puntos de datos dados, incluso cuando se desconoce la función específica.
 
 ## Fórmula 
-
+![Formula](https://almedinablog.files.wordpress.com/2016/03/interpolacion-cuadratica.png)
 
 ## Algoritmo 
 
-**Paso 1:** 
+**Paso 1:** Se evalua la funcion en los tres valores iniciales. 
+
+**paso 2:** Sustituir los valores en la ecuación se obtiene la formula cuadratica.
+
+**Paso 3:** Repetir el proceso
