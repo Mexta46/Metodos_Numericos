@@ -24,6 +24,8 @@ Si la matriz no cumple con estas condiciones, la convergencia del método puede 
 
 ## Metodología
 
+Código en Python para el Método de Jacobi
+
 ```python
 
 # Importando Numpy
@@ -102,4 +104,11 @@ else:
   ```
 
 
-## Ejemplos
+## Resultados y Análisis
+
+"Este método iterativo te cálcula la solución de un sistema de ecuaciones tomando un vector inicial."
+
+El codigo anterior aplica la función en Python recibiendo una una matriz de coeficientes  a  y el vector de constantes b  de un sistema lineal.
+Adicionalmente recibe un vector inicial  x, la estimación del error   e y el máximo de iteraciones permitidas m. Esta 
+función utiliza dentro de un ciclo, la función jacobi definida anteriormente. Entrega el vector x calculado y el número 
+de iteraciones realizadas k. Si el método no converge, x contendrá un vector nulo.
