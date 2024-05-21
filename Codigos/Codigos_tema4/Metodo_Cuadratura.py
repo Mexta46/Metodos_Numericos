@@ -1,22 +1,3 @@
-# Interpolación Cuadrática
-## Definición
-La interpolación cuadrática es un método de interpolación que utiliza un polinomio de segundo grado para estimar valores de una función desconocida a partir de un conjunto de puntos conocidos. Este método ajusta un polinomio cuadrático \( P(x) = ax^2 + bx + c \) que pasa por tres puntos dados \((x_0, y_0)\), \((x_1, y_1)\), y \((x_2, y_2)\).
-
-![](https://github.com/Mexta46/Metodos_Numericos_Tema4/blob/main/Imagenes/Imagenes_tema5/interpolacion.png)
-
-## Algoritmo
-1. Definir tres puntos conocidos \((x_0, y_0)\), \((x_1, y_1)\), y \((x_2, y_2)\).
-2. Determinar el polinomio cuadrático \( P(x) = ax^2 + bx + c \) que pasa por estos puntos.
-3. Resolver el sistema de ecuaciones para encontrar los coeficientes \( a \), \( b \), y \( c \).
-4. Utilizar el polinomio cuadrático para estimar valores en puntos intermedios.
-
-![](https://github.com/Mexta46/Metodos_Numericos_Tema4/blob/main/Imagenes/Imagenes_tema5/interpolacionf.png)
-
-## Metodología
-
-### Código en Python para Interpolación Cuadrática
-A continuación, se presenta un ejemplo de código en Python para aplicar la interpolación cuadrática.
-
 ```python
 import numpy as np
 import matplotlib.pyplot as plt
@@ -70,6 +51,3 @@ plt.legend()
 plt.title('Interpolación Cuadrática')
 plt.show()
 ```
-
-### Resultados y Análisis
-El código anterior aplica la interpolación cuadrática a tres puntos conocidos \((0, 1)\), \((1, 3)\), y \((2, 2)\). Se determina el polinomio cuadrático que pasa por estos puntos y se utiliza para estimar valores intermedios.
