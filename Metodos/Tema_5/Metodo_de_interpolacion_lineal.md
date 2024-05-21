@@ -19,3 +19,4 @@ La fórmula de interpolación lineal es el método más simple que se utiliza pa
 **Paso 4:** Calcula yp = y 0 + ((y 1 - y 0 )/(x 1 - x 0 )) * (x - x 0 ).
 
 **Paso 5:** Muestra el valor de yp como valor interpolado.
+
