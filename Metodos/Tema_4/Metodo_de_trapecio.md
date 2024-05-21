@@ -58,7 +58,7 @@ except Exception as e: # captura los errores al ingresar los datos equivocados, 
 
 Solución:
 
-![](https://github.com/Mexta46/Metodos_Numericos/blob/main/Imagenes/Imagenes_tema4/Ejemplo1Trap.png)
+![](https://github.com/Mexta46/Metodos_Numericos/blob/3abb8cf12a2b67d8b0bcf6d2d3f39078d6474753/Imagenes/Imagenes_Tema4/Ejemplo1Trap.png)
 
 ------------
 
@@ -66,7 +66,7 @@ Solución:
 
 Solución:
 
-![](https://github.com/Mexta46/Metodos_Numericos/blob/main/Imagenes/Imagenes_tema4/Ejemplo2Trap.png)
+![](https://github.com/Mexta46/Metodos_Numericos/blob/3abb8cf12a2b67d8b0bcf6d2d3f39078d6474753/Imagenes/Imagenes_Tema4/Ejemplo2Trap.png)
 
 ------------
 
@@ -74,7 +74,7 @@ Solución:
 
 Solución:
 
-![](https://github.com/Mexta46/Metodos_Numericos/blob/main/Imagenes/Imagenes_tema4/Ejemplo3Trap.png)
+![](https://github.com/Mexta46/Metodos_Numericos/blob/3abb8cf12a2b67d8b0bcf6d2d3f39078d6474753/Imagenes/Imagenes_Tema4/Ejemplo3Trap.png)
 
 ------------
 
@@ -82,7 +82,7 @@ Solución:
 
 Solución:
 
-![](https://github.com/Mexta46/Metodos_Numericos/blob/main/Imagenes/Imagenes_tema4/Ejemplo4Trap.png)
+![](https://github.com/Mexta46/Metodos_Numericos/blob/3abb8cf12a2b67d8b0bcf6d2d3f39078d6474753/Imagenes/Imagenes_Tema4/Ejemplo4Trap.png)
 
 ------------
 
@@ -90,4 +90,4 @@ Solución:
 
 Solución:
 
-![](https://github.com/Mexta46/Metodos_Numericos/blob/main/Imagenes/Imagenes_tema4/Ejemplo5Trapecio.png)
+![](https://github.com/Mexta46/Metodos_Numericos/blob/3abb8cf12a2b67d8b0bcf6d2d3f39078d6474753/Imagenes/Imagenes_Tema4/Ejemplo5Trapecio.png)
