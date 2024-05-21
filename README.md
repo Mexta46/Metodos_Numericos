@@ -50,3 +50,5 @@ Martín César Hernández Sánchez<p/>
 Oliver Espinosa Sánchez<p/>
 Javier Emanuel Sánchez Hernández<p/>
 Frank Anthuan Cerón Maldonado<p/>
+Nadia Fernanda Mendoza Romero<p/>
+María Yesenia Morales Gonzales<p/>
