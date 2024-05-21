@@ -1,6 +1,13 @@
 # Interpolación lineal
 
-## DEfinicion 
+## Definicion 
 
-La interpolación es un método para estimar el valor de una función entre dos valores conocidos. La estrategia para la interpolación lineal es utilizar una línea recta para conectar los puntos de datos dados tanto en el lado positivo como en el negativo del punto desconocido
-A menudo, la interpolación lineal no es precisa para datos no lineales. Si los puntos en el conjunto de datos cambian en un valor grande, entonces la interpolación lineal puede no dar una buena estimación. Además, implica estimar un nuevo valor conectando dos valores conocidos adyacentes con una línea recta.
+La fórmula de interpolación lineal es el método más simple que se utiliza para estimar el valor de una función entre dos valores conocidos. Además, la fórmula de interpolación lineal es un método útil para ajustar curvas utilizando polinomios lineales. Básicamente, el método de interpolación se utiliza para encontrar nuevos valores para cualquier función utilizando el conjunto de valores. Los valores desconocidos en la tabla se encuentran usando la fórmula de interpolación lineal.
+
+La fórmula de interpolación lineal es el método más simple que se utiliza para estimar el valor de una función entre dos valores conocidos. Además, la fórmula de interpolación lineal es un método útil para ajustar curvas utilizando polinomios lineales. Básicamente, el método de interpolación se utiliza para encontrar nuevos valores para cualquier función utilizando el conjunto de valores. Los valores desconocidos en la tabla se encuentran usando la fórmula de interpolación lineal.
+
+![Formula](https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQcdgJkeZFq65sgSuHEB_7nEooMkJ1sWJTqF3uidUKv&s)
+
+## Algoritmo
+
+
