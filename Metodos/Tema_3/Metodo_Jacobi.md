@@ -1,7 +1,21 @@
 # Metodo de Jacobi
 ## Definición
 
+El método de Jacobi realiza operaciones semejantes al método de Gauss-Seidel.
+
+El método de Jacobi también usa el vector inicial X0, la diferencia consiste en que la actualización del vector X en cada iteración se realiza cuando se ha calculado el vector nuevo completo.
+
 ## Algoritmo
+
+1.-Inicialización: Comienza con una estimación inicial de las soluciones del sistema de ecuaciones lineales 
+𝐴𝑥=𝑏. Puedes empezar con un vector 𝑥^(0).
+
+2.-Iteraciones: Para cada iteración 𝑘:
+![image](https://github.com/Mexta46/Metodos_Numericos/assets/160789479/d332020b-6db0-44c6-882b-f05d4bfa6006)
+3.-Criterio de parada: Repite el paso 2 hasta que se cumpla algún criterio de parada. Un criterio común es que la diferencia entre dos iteraciones consecutivas sea menor que una cierta tolerancia predefinida, o hasta que se alcance un número máximo de iteraciones.
+4.-Salida: El vector 𝑥^(𝑘)será la aproximación de la solución del sistema de ecuaciones lineales.
+
+
 
 ## Metodología
 
