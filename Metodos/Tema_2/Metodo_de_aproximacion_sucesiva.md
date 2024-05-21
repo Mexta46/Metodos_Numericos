@@ -12,7 +12,7 @@ El método de aproximación sucesiva, también conocido como método de iteraci�
 4. Iterar utilizando la fórmula \( x_{n+1} = g(x_n) \) hasta que se cumpla el criterio de convergencia.
 5. Comprobar la convergencia y devolver la solución aproximada.
 
-![](https://github.com/Mexta46/Metodos_Numericos_Tema4/blob/main/Imagenes/Imagenes_tema1/aproxf.jpg)
+![](https://github.com/Mexta46/Metodos_Numericos_Tema4/blob/main/Imagenes/Imagenes_tema2/aproxf.jpg)
 
 ## Metodología
 
