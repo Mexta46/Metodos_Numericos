@@ -33,6 +33,7 @@ x1=5
 y1=21
 
 RESULTADO
+
 ![lineal1](https://github.com/Mexta46/Metodos_Numericos/assets/169117716/149a42ce-59bd-4ee9-b281-81b5d150a15a)
 
 ### Ejercicio 2
@@ -48,6 +49,7 @@ y1=4100
 x= 1986
 
 RESULTADO
+
 ![lineal2](https://github.com/Mexta46/Metodos_Numericos/assets/169117716/3296940d-1881-4322-8c69-246430524280)
 
 ### Ejercicio 3 
@@ -63,6 +65,7 @@ y1=37
 x= 3.5
 
 RESULTADO
+
 ![lineal2](https://github.com/Mexta46/Metodos_Numericos/assets/169117716/4f8b007b-8f77-49db-82f3-602991185d1b)
 
 ### Ejercicio 4 
@@ -78,6 +81,7 @@ y1=69
 x= 1.5
 
 RESULTADO
+
 ![4](https://github.com/Mexta46/Metodos_Numericos/assets/169117716/fcfc88d3-bcfb-4df4-8a2d-81d7d62423f1)
 
 ### Ejersicio 5 
@@ -93,6 +97,7 @@ y1=352
 x= 12
 
 RESULTADO
+
 ![6](https://github.com/Mexta46/Metodos_Numericos/assets/169117716/4e3cd1cb-58c3-48b3-9e40-912aaa2ec066)
 
 
