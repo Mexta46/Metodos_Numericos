@@ -58,7 +58,7 @@ except Exception as e: # captura los errores al ingresar los datos equivocados, 
 
 Solución:
 
-![](https://github.com/Mexta46/Metodos_Numericos_Tema4/blob/345f3e1a51ea99663c963c5deeaa6f574daca943/Imagenes/Imagenes_Tema4/Ejemplo1Trap.png)
+![](Imagenes/Imagenes_Tema4/Ejemplo1Trap.png)
 
 ------------
 
