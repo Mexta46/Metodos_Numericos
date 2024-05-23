@@ -71,8 +71,6 @@ else:
     print(f"No se alcanzó la convergencia en {iteraciones} iteraciones")
 ```
 
-¡Entendido! A continuación, se presentan cuatro ejercicios adicionales sobre el método de bisección, comenzando con el número 2.
-
 ### Ejercicio 2: Resolver \(f(x) = x^2 - 3\) mediante el método de bisección
 Utiliza el método de bisección para encontrar la raíz de \(f(x) = x^2 - 3\) en el intervalo [1, 2].
 
