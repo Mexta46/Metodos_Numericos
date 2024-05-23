@@ -161,8 +161,6 @@ print(f"Multiplicación con redondeo a 3 cifras decimales: {resultado_con_redond
 
 4. **Error de redondeo en una multiplicación**: Este ejercicio ilustra el impacto del error de redondeo en una operación de multiplicación, comparando los resultados con y sin redondeo.
 
-Estos ejercicios te ayudarán a entender y analizar cómo los errores de redondeo pueden afectar los cálculos numéricos. Si necesitas más detalles o tienes alguna pregunta, no dudes en decírmelo.
-
 
 ### Resultados y Análisis
 El código anterior genera una tabla que muestra el valor exacto, el valor aproximado (redondeado a 5 decimales) y el error de redondeo en varios puntos del intervalo [0, 1]. Analizando estos resultados, se puede observar cómo el error de redondeo varía a lo largo del intervalo y entender mejor su comportamiento y magnitud.
