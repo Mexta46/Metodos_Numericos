@@ -71,5 +71,132 @@ else:
     print(f"No se alcanzó la convergencia en {iteraciones} iteraciones")
 ```
 
+¡Entendido! A continuación, se presentan cuatro ejercicios adicionales sobre el método de bisección, comenzando con el número 2.
+
+### Ejercicio 2: Resolver \(f(x) = x^2 - 3\) mediante el método de bisección
+Utiliza el método de bisección para encontrar la raíz de \(f(x) = x^2 - 3\) en el intervalo [1, 2].
+
+```python
+# Definición de la función f(x) = x^2 - 3
+def f(x):
+    return x**2 - 3
+
+# Intervalo inicial
+a = 1
+b = 2
+
+# Tolerancia y número máximo de iteraciones
+tolerancia = 1e-6
+max_iter = 100
+
+# Método de bisección
+for i in range(max_iter):
+    c = (a + b) / 2
+    if f(c) == 0 or (b - a) / 2 < tolerancia:
+        break
+    if f(c) * f(a) > 0:
+        a = c
+    else:
+        b = c
+
+print(f"Raíz aproximada: {c}")
+print(f"Iteraciones: {i+1}")
+```
+
+### Ejercicio 3: Resolver \(f(x) = x^3 + x - 1\) mediante el método de bisección
+Utiliza el método de bisección para encontrar la raíz de \(f(x) = x^3 + x - 1\) en el intervalo [0, 1].
+
+```python
+# Definición de la función f(x) = x^3 + x - 1
+def f(x):
+    return x**3 + x - 1
+
+# Intervalo inicial
+a = 0
+b = 1
+
+# Tolerancia y número máximo de iteraciones
+tolerancia = 1e-6
+max_iter = 100
+
+# Método de bisección
+for i in range(max_iter):
+    c = (a + b) / 2
+    if f(c) == 0 or (b - a) / 2 < tolerancia:
+        break
+    if f(c) * f(a) > 0:
+        a = c
+    else:
+        b = c
+
+print(f"Raíz aproximada: {c}")
+print(f"Iteraciones: {i+1}")
+```
+
+### Ejercicio 4: Resolver \(f(x) = \cos(x) - x\) mediante el método de bisección
+Utiliza el método de bisección para encontrar la raíz de \(f(x) = \cos(x) - x\) en el intervalo [0, 1].
+
+```python
+import numpy as np
+
+# Definición de la función f(x) = cos(x) - x
+def f(x):
+    return np.cos(x) - x
+
+# Intervalo inicial
+a = 0
+b = 1
+
+# Tolerancia y número máximo de iteraciones
+tolerancia = 1e-6
+max_iter = 100
+
+# Método de bisección
+for i in range(max_iter):
+    c = (a + b) / 2
+    if f(c) == 0 or (b - a) / 2 < tolerancia:
+        break
+    if f(c) * f(a) > 0:
+        a = c
+    else:
+        b = c
+
+print(f"Raíz aproximada: {c}")
+print(f"Iteraciones: {i+1}")
+```
+
+### Ejercicio 5: Resolver \(f(x) = e^{-x} - x\) mediante el método de bisección
+Utiliza el método de bisección para encontrar la raíz de \(f(x) = e^{-x} - x\) en el intervalo [0, 1].
+
+```python
+import numpy as np
+
+# Definición de la función f(x) = e^(-x) - x
+def f(x):
+    return np.exp(-x) - x
+
+# Intervalo inicial
+a = 0
+b = 1
+
+# Tolerancia y número máximo de iteraciones
+tolerancia = 1e-6
+max_iter = 100
+
+# Método de bisección
+for i in range(max_iter):
+    c = (a + b) / 2
+    if f(c) == 0 or (b - a) / 2 < tolerancia:
+        break
+    if f(c) * f(a) > 0:
+        a = c
+    else:
+        b = c
+
+print(f"Raíz aproximada: {c}")
+print(f"Iteraciones: {i+1}")
+```
+
+
 ### Resultados y Análisis
 El código anterior aplica el método de bisección para encontrar una solución de la ecuación \( x^3 - x - 2 = 0 \) en el intervalo \([1, 2]\). El resultado muestra si el método ha convergido a una solución dentro de un número máximo de iteraciones y una tolerancia especificada.
