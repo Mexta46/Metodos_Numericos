@@ -151,16 +151,6 @@ print(f"Multiplicación sin redondeo: {resultado_sin_redondeo}")
 print(f"Multiplicación con redondeo a 3 cifras decimales: {resultado_con_redondeo}")
 ```
 
-### Explicación de los ejercicios:
-
-1. **Redondeo de números flotantes**: Este ejercicio muestra cómo redondear un número flotante a diferentes cantidades de cifras decimales, ilustrando el cambio en precisión.
-
-2. **Redondeo de elementos en un array**: Este ejercicio aplica el redondeo a cada elemento de un array de números flotantes, mostrando cómo se puede manejar un conjunto de datos.
-
-3. **Propagación del error de redondeo en una suma**: Aquí se investiga cómo el error de redondeo afecta la suma de varios números, comparando la suma sin redondeo y con redondeo.
-
-4. **Error de redondeo en una multiplicación**: Este ejercicio ilustra el impacto del error de redondeo en una operación de multiplicación, comparando los resultados con y sin redondeo.
-
 
 ### Resultados y Análisis
 El código anterior genera una tabla que muestra el valor exacto, el valor aproximado (redondeado a 5 decimales) y el error de redondeo en varios puntos del intervalo [0, 1]. Analizando estos resultados, se puede observar cómo el error de redondeo varía a lo largo del intervalo y entender mejor su comportamiento y magnitud.
