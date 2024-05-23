@@ -55,7 +55,6 @@ aproximacion = cuadratura(f, a, b, puntos, pesos)
 print("Aproximación de la integral definida:", aproximacion)
 ```
 
-![imagen3](https://github.com/Mexta46/Metodos_Numericos_Tema4/assets/160789479/18673eab-ce26-4360-a2fa-1b880337b241)
 
 ### Resultados y Análisis
 El código anterior aproxima la integral definida de la función seno en el intervalo \([0, \pi]\) utilizando el Método de Cuadratura con la regla de cuadratura de Gauss-Legendre con 3 puntos. Se obtiene una aproximación numérica de la integral definida.
