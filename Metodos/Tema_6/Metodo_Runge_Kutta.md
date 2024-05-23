@@ -60,6 +60,20 @@ for point in solution:
     print("x =", point[0], ", y =", point[1])
 ```
 
+
+### Ejercicio 2:
+Resuelve la ecuación diferencial \( \frac{{dy}}{{dx}} = x^2 - y \) con condiciones iniciales \( y(0) = 1 \) en el intervalo \( 0 \leq x \leq 1 \) utilizando el método de Runge-Kutta con un tamaño de paso \( h = 0.1 \).
+
+### Ejercicio 3:
+Resuelve la ecuación diferencial \( \frac{{dy}}{{dx}} = -2xy \) con condiciones iniciales \( y(0) = 0.5 \) en el intervalo \( 0 \leq x \leq 1 \) utilizando el método de Runge-Kutta con un tamaño de paso \( h = 0.05 \).
+
+### Ejercicio 4:
+Resuelve la ecuación diferencial \( \frac{{dy}}{{dx}} = x^2 + y^2 \) con condiciones iniciales \( y(0) = 0 \) en el intervalo \( 0 \leq x \leq 1 \) utilizando el método de Runge-Kutta con un tamaño de paso \( h = 0.1 \).
+
+### Ejercicio 5:
+Resuelve la ecuación diferencial \( \frac{{dy}}{{dx}} = y - x \) con condiciones iniciales \( y(0) = 2 \) en el intervalo \( 0 \leq x \leq 1 \) utilizando el método de Runge-Kutta con un tamaño de paso \( h = 0.2 \).
+
+
 ## Análisis y Resultados
 El método de Runge-Kutta de cuarto orden proporciona una solución más precisa a la ecuación diferencial especificada en comparación con el método de Euler. Al utilizar una aproximación de cuarto orden, el método de Runge-Kutta es capaz de capturar de manera más efectiva los cambios en la función y proporcionar una solución más precisa en cada paso.
 
