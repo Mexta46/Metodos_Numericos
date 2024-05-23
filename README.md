@@ -44,6 +44,10 @@ Tema 5: Interpolación y ajuste de funciones
 
 ------------
 
+Tema 6: Solución de ecuaciones diferenciales
+1. [Metodo de Euler](Metodos/Tema_6/Metodo_Euler.md)
+2. [Metodo Runge-Kutta](Metodos/Tema_6/Metodo_Runge_Kutta.md)
+3. [Metodo Teylor](Metodos/Tema_6/Metodo_Taylor.md)
 
 Equipo conformado por:
 Martín César Hernández Sánchez<p/>
