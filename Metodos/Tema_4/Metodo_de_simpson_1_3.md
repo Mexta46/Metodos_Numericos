@@ -1,8 +1,9 @@
-# Metodo de simpsom 1/3
+# Método de Simpson 1/3
 ## Definición
 El método de Simpson es una técnica de integración numérica que utiliza polinomios de segundo grado para aproximar el área bajo una curva. Se basa en dividir el área en segmentos y calcular una suma ponderada de los valores de la función en los extremos y en el punto medio de cada segmento.
 
-![](https://github.com/Mexta46/Metodos_Numericos_Tema4/blob/main/Imagenes/Imagenes_Tema4/simpson1.png)
+![Simpson 1](https://github.com/Mexta46/Metodos_Numericos_Tema4/blob/main/Imagenes/Imagenes_Tema4/simpson1.png)
+
 ## Algoritmo
 1. f(x) que se desea integrar.
 2. Especificar el intervalo de integración,[a,b].
@@ -11,9 +12,8 @@ El método de Simpson es una técnica de integración numérica que utiliza poli
 5. Calcular los valores de la función f(x) en los extremos de los subintervalos: f(a),f(a+h),f(a+2h),…,f(b).
 6. Calcular los valores de la función f(x) en los puntos medios de los subintervalos: f(a+((h)/2)), f(a+((3h)/2)), ... , f(b+((h)/2)).
 7. Aplicar la fórmula de Simpson para calcular la aproximación de la integral:
-![](https://github.com/Mexta46/Metodos_Numericos_Tema4/blob/main/Imagenes/Imagenes_Tema4/simpson2.png)
+![Simpson 2](https://github.com/Mexta46/Metodos_Numericos_Tema4/blob/main/Imagenes/Imagenes_Tema4/simpson2.png)
 8. Devolver el valor calculado como la aproximación de la integral.
-
 
 ## Metodología 
 
@@ -50,11 +50,13 @@ b = math.pi   # Límite superior del intervalo (pi)
 n = 10  # Número de subintervalos (par)
 
 # Calcular la aproximación de la integral
-result = simpson(a, b, n)
+result = simpson(a, b, n
+````
 
-# Mostrar el resultado de la aproximación de la integral
-print("Aproximación de la integral:", result)
-```
+
+# Resultados y Análisis
+print("La aproximación de la integral definida es:", result)
+print("La integral definida es el área bajo la curva de la función f(x) = sin(x) en el intervalo [0, pi]. El Método de Simpson 1/3 se utiliza para calcular esta área numéricamente. El valor aproximado obtenido es una estimación de la integral definida.")
 
 # Ejemplos
 
