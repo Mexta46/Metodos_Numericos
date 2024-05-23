@@ -65,6 +65,20 @@ for point in solution:
     print("x =", point[0], ", y =", point[1])
 ```
 
+
+### Ejercicio 2:
+Resuelve la ecuación diferencial \( \frac{{dy}}{{dx}} = x^2 - y \) con condiciones iniciales \( y(0) = 1 \) en el intervalo \( 0 \leq x \leq 1 \) utilizando el método de Taylor con un tamaño de paso \( h = 0.1 \).
+
+### Ejercicio 3:
+Resuelve la ecuación diferencial \( \frac{{dy}}{{dx}} = -2xy \) con condiciones iniciales \( y(0) = 0.5 \) en el intervalo \( 0 \leq x \leq 1 \) utilizando el método de Taylor con un tamaño de paso \( h = 0.05 \).
+
+### Ejercicio 4:
+Resuelve la ecuación diferencial \( \frac{{dy}}{{dx}} = x^2 + y^2 \) con condiciones iniciales \( y(0) = 0 \) en el intervalo \( 0 \leq x \leq 1 \) utilizando el método de Taylor con un tamaño de paso \( h = 0.1 \).
+
+### Ejercicio 5:
+Resuelve la ecuación diferencial \( \frac{{dy}}{{dx}} = y - x \) con condiciones iniciales \( y(0) = 2 \) en el intervalo \( 0 \leq x \leq 1 \) utilizando el método de Taylor con un tamaño de paso \( h = 0.2 \).
+
+
 ## Análisis y Resultados
 El método de Taylor proporciona una solución más precisa a la ecuación diferencial especificada en comparación con el método de Euler, ya que utiliza una aproximación de alta precisión basada en la serie de Taylor. Al calcular las derivadas parciales de la función \( f(x, y) \) y utilizar la serie de Taylor para aproximar la solución en los puntos sucesivos, el método de Taylor es capaz de capturar de manera más efectiva los cambios en la función y proporcionar una solución más precisa en cada paso.
 
