@@ -1,199 +1,165 @@
-# Método del Intervalo
+# Método de Gauss-Jordan
 ## Definición
-El método del intervalo es una técnica numérica utilizada para encontrar raíces de una ecuación \( f(x) = 0 \). Se basa en identificar un intervalo \([a, b]\) en el que la función cambia de signo, indicando la presencia de una raíz. Este método es similar al método de bisección, pero puede ser menos específico en cuanto a la técnica de subdivisión del intervalo.
-
-![](https://github.com/Mexta46/Metodos_Numericos_Tema4/blob/main/Imagenes/Imagenes_tema2/intervalo.jpg)
+El método de Gauss-Jordan es una técnica numérica utilizada para resolver sistemas de ecuaciones lineales de la forma \( Ax = b \). Se basa en la eliminación de Gauss con una serie de pasos adicionales para convertir la matriz de coeficientes en una matriz identidad, simplificando la obtención de la solución.
 
 ## Algoritmo
-1. Definir la función \( f(x) \) y los extremos iniciales del intervalo \([a, b]\) tal que \( f(a) \cdot f(b) < 0 \).
-2. Calcular el punto medio \( c = \frac{a + b}{2} \).
-3. Evaluar \( f(c) \).
-4. Si \( f(c) = 0 \) o el intervalo es suficientemente pequeño (criterio de convergencia), entonces \( c \) es la raíz.
-5. Si \( f(a) \cdot f(c) < 0 \), entonces la raíz está en el intervalo \([a, c]\). De lo contrario, la raíz está en \([c, b]\).
-6. Repetir el proceso con el nuevo intervalo hasta que se cumpla el criterio de convergencia.
-
-![](https://github.com/Mexta46/Metodos_Numericos_Tema4/blob/main/Imagenes/Imagenes_tema2/intervalof.png)
+1. Definir la matriz de coeficientes \( A \) y el vector de términos independientes \( b \).
+2. Construir la matriz aumentada \([A | b]\).
+3. Aplicar las operaciones de fila para transformar la matriz aumentada en la forma \([I | x]\), donde \( I \) es la matriz identidad.
+4. El vector resultante en la columna de términos independientes es la solución \( x \).
 
 ## Metodología
 
-### Código en Python para el Método del Intervalo
-A continuación, se presenta un ejemplo de código en Python para aplicar el método del intervalo para encontrar una raíz de la ecuación \( f(x) = 0 \).
+### Código en Python para el Método de Gauss-Jordan
+A continuación, se presenta un ejemplo de código en Python para aplicar el método de Gauss-Jordan para resolver un sistema de ecuaciones lineales.
 
 ```python
-def metodo_intervalo(f, a, b, tol, Nmax):
+import numpy as np
+
+def gauss_jordan(a, b, tol=1.0e-12):
     """
-    Función para encontrar una raíz de la ecuación f(x) = 0 utilizando el método del intervalo.
+    Función para resolver el sistema de ecuaciones lineales Ax = b utilizando el método de Gauss-Jordan.
 
     Parámetros:
-    f (función): Función a evaluar.
-    a (float): Extremo inferior del intervalo.
-    b (float): Extremo superior del intervalo.
-    tol (float): Tolerancia para la convergencia.
-    Nmax (int): Número máximo de iteraciones.
+    a (ndarray): Matriz de coeficientes del sistema (n x n).
+    b (ndarray): Vector de términos independientes (n).
+    tol (float): Tolerancia para detectar singularidad.
 
     Devuelve:
-    float: Solución aproximada.
-    int: Número de iteraciones realizadas.
-    bool: Indicador de convergencia.
+    ndarray: Solución del sistema.
     """
-    if f(a) * f(b) >= 0:
-        print("La función debe cambiar de signo en el intervalo [a, b]")
-        return None, 0, False
+    n = len(b)
+    # Crear la matriz aumentada
+    aug_matrix = np.hstack((a, b.reshape(-1, 1)))
 
-    for n in range(1, Nmax + 1):
-        c = (a + b) / 2
-        if abs(f(c)) < tol or (b - a) / 2 < tol:
-            return c, n, True
-        if f(a) * f(c) < 0:
-            b = c
-        else:
-            a = c
+    # Aplicar eliminación Gauss-Jordan
+    for i in range(n):
+        # Buscar el máximo elemento en la columna i
+        max_row = np.argmax(np.abs(aug_matrix[i:n, i])) + i
+        aug_matrix[[i, max_row]] = aug_matrix[[max_row, i]]
 
-    return c, Nmax, False
+        # Verificar si la matriz es singular
+        if np.abs(aug_matrix[i, i]) < tol:
+            raise ValueError("La matriz es singular y no puede resolverse")
 
-# Definición de la función a evaluar
-def f(x):
-    return x**3 - x - 2
+        # Hacer que el elemento diagonal sea 1
+        aug_matrix[i] = aug_matrix[i] / aug_matrix[i, i]
 
-# Parámetros del método
-a = 1  # extremo inferior del intervalo
-b = 2  # extremo superior del intervalo
-tol = 1e-6  # tolerancia
-Nmax = 100  # número máximo de iteraciones
+        # Eliminar los demás elementos de la columna
+        for j in range(n):
+            if j != i:
+                aug_matrix[j] -= aug_matrix[j, i] * aug_matrix[i]
 
-# Aplicar el método del intervalo
-solucion, iteraciones, convergencia = metodo_intervalo(f, a, b, tol, Nmax)
+    # La solución está en la última columna de la matriz aumentada
+    x = aug_matrix[:, -1]
+    return x
 
-# Imprimir resultados
-if convergencia:
-    print(f"Solución encontrada: {solucion:.6f} en {iteraciones} iteraciones")
-else:
-    print(f"No se alcanzó la convergencia en {iteraciones} iteraciones")
+# Ejemplo de uso
+# Definición de la matriz de coeficientes y el vector de términos independientes
+a = np.array([[2, 1, -1],
+              [-3, -1, 2],
+              [-2, 1, 2]], dtype=float)
+b = np.array([8, -11, -3], dtype=float)
+
+# Aplicar el método de Gauss-Jordan
+solucion = gauss_jordan(a, b)
+
+# Imprimir la solución
+print("Solución del sistema:")
+print(solucion)
 ```
 
-### Ejercicio 2: Resolver \(f(x) = x^2 - 5\) mediante el método del intervalo
-Utiliza el método del intervalo para encontrar la raíz de \(f(x) = x^2 - 5\) en el intervalo [2, 3].
+### Ejercicio 2: Resolver el sistema de ecuaciones
+\[ \begin{cases} 
+x + y + z = 6 \\
+2y + 5z = -4 \\
+2x + 5y - z = 27 
+\end{cases} \]
+utilizando el método de Gauss-Jordan.
 
 ```python
-# Definición de la función f(x) = x^2 - 5
-def f(x):
-    return x**2 - 5
+# Definición de la matriz de coeficientes y el vector de términos independientes
+a = np.array([[1, 1, 1],
+              [0, 2, 5],
+              [2, 5, -1]], dtype=float)
+b = np.array([6, -4, 27], dtype=float)
 
-# Intervalo inicial
-a = 2
-b = 3
+# Aplicar el método de Gauss-Jordan
+solucion = gauss_jordan(a, b)
 
-# Tolerancia y número máximo de iteraciones
-tolerancia = 1e-6
-max_iter = 100
-
-# Método del intervalo (bisección)
-for i in range(max_iter):
-    c = (a + b) / 2
-    if f(c) == 0 or (b - a) / 2 < tolerancia:
-        break
-    if f(c) * f(a) > 0:
-        a = c
-    else:
-        b = c
-
-print(f"Raíz aproximada: {c}")
-print(f"Iteraciones: {i+1}")
+# Imprimir la solución
+print("Solución del sistema:")
+print(solucion)
 ```
 
-### Ejercicio 3: Resolver \(f(x) = \log(x) - 1\) mediante el método del intervalo
-Utiliza el método del intervalo para encontrar la raíz de \(f(x) = \log(x) - 1\) en el intervalo [2, 3].
+### Ejercicio 3: Resolver el sistema de ecuaciones
+\[ \begin{cases} 
+3x - 0.1y - 0.2z = 7.85 \\
+0.1x + 7y - 0.3z = -19.3 \\
+0.3x - 0.2y + 10z = 71.4 
+\end{cases} \]
+utilizando el método de Gauss-Jordan.
 
 ```python
-import numpy as np
+# Definición de la matriz de coeficientes y el vector de términos independientes
+a = np.array([[3, -0.1, -0.2],
+              [0.1, 7, -0.3],
+              [0.3, -0.2, 10]], dtype=float)
+b = np.array([7.85, -19.3, 71.4], dtype=float)
 
-# Definición de la función f(x) = log(x) - 1
-def f(x):
-    return np.log(x) - 1
+# Aplicar el método de Gauss-Jordan
+solucion = gauss_jordan(a, b)
 
-# Intervalo inicial
-a = 2
-b = 3
-
-# Tolerancia y número máximo de iteraciones
-tolerancia = 1e-6
-max_iter = 100
-
-# Método del intervalo (bisección)
-for i in range(max_iter):
-    c = (a + b) / 2
-    if f(c) == 0 or (b - a) / 2 < tolerancia:
-        break
-    if f(c) * f(a) > 0:
-        a = c
-    else:
-        b = c
-
-print(f"Raíz aproximada: {c}")
-print(f"Iteraciones: {i+1}")
+# Imprimir la solución
+print("Solución del sistema:")
+print(solucion)
 ```
 
-### Ejercicio 4: Resolver \(f(x) = x^3 - 7x + 6\) mediante el método del intervalo
-Utiliza el método del intervalo para encontrar la raíz de \(f(x) = x^3 - 7x + 6\) en el intervalo [1, 2].
+### Ejercicio 4: Resolver el sistema de ecuaciones
+\[ \begin{cases} 
+x + 2y + 3z = 9 \\
+2x + 3y + 5z = 23 \\
+4x + 5y + 7z = 34 
+\end{cases} \]
+utilizando el método de Gauss-Jordan.
 
 ```python
-# Definición de la función f(x) = x^3 - 7x + 6
-def f(x):
-    return x**3 - 7*x + 6
+# Definición de la matriz de coeficientes y el vector de términos independientes
+a = np.array([[1, 2, 3],
+              [2, 3, 5],
+              [4, 5, 7]], dtype=float)
+b = np.array([9, 23, 34], dtype=float)
 
-# Intervalo inicial
-a = 1
-b = 2
+# Aplicar el método de Gauss-Jordan
+solucion = gauss_jordan(a, b)
 
-# Tolerancia y número máximo de iteraciones
-tolerancia = 1e-6
-max_iter = 100
-
-# Método del intervalo (bisección)
-for i in range(max_iter):
-    c = (a + b) / 2
-    if f(c) == 0 or (b - a) / 2 < tolerancia:
-        break
-    if f(c) * f(a) > 0:
-        a = c
-    else:
-        b = c
-
-print(f"Raíz aproximada: {c}")
-print(f"Iteraciones: {i+1}")
+# Imprimir la solución
+print("Solución del sistema:")
+print(solucion)
 ```
 
-### Ejercicio 5: Resolver \(f(x) = e^x - 3\) mediante el método del intervalo
-Utiliza el método del intervalo para encontrar la raíz de \(f(x) = e^x - 3\) en el intervalo [1, 2].
+### Ejercicio 5: Resolver el sistema de ecuaciones
+\[ \begin{cases} 
+2x + y + z = 4 \\
+x + 3y + 2z = 5 \\
+z = 1 
+\end{cases} \]
+utilizando el método de Gauss-Jordan.
 
 ```python
-import numpy as np
+# Definición de la matriz de coeficientes y el vector de términos independientes
+a = np.array([[2, 1, 1],
+              [1, 3, 2],
+              [0, 0, 1]], dtype=float)
+b = np.array([4, 5, 1], dtype=float)
 
-# Definición de la función f(x) = e^x - 3
-def f(x):
-    return np.exp(x) - 3
+# Aplicar el método de Gauss-Jordan
+solucion = gauss_jordan(a, b)
 
-# Intervalo inicial
-a = 1
-b = 2
-
-# Tolerancia y número máximo de iteraciones
-tolerancia = 1e-6
-max_iter = 100
-
-# Método del intervalo (bisección)
-for i in range(max_iter):
-    c = (a + b) / 2
-    if f(c) == 0 or (b - a) / 2 < tolerancia:
-        break
-    if f(c) * f(a) > 0:
-        a = c
-    else:
-        b = c
-
-print(f"Raíz aproximada: {c}")
-print(f"Iteraciones: {i+1}")
+# Imprimir la solución
+print("Solución del sistema:")
+print(solucion)
 ```
 
 ### Resultados y Análisis
-El código anterior aplica el método del intervalo para encontrar una solución de la ecuación \( x^3 - x - 2 = 0 \) en el intervalo \([1, 2]\). El resultado muestra si el método ha convergido a una solución dentro de un número máximo de iteraciones y una tolerancia especificada.
+El código anterior aplica el método de Gauss-Jordan para resolver diferentes sistemas de ecuaciones lineales. Los resultados muestran la solución de cada sistema, asegurando que se cumplan las ecuaciones dadas.
