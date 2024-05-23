@@ -1,103 +1,57 @@
-# Interpolación lineal
+# Interpolación Lineal
 
-## Definicion 
+## Definición
 
-La fórmula de interpolación lineal es el método más simple que se utiliza para estimar el valor de una función entre dos valores conocidos. Además, la fórmula de interpolación lineal es un método útil para ajustar curvas utilizando polinomios lineales. Básicamente, el método de interpolación se utiliza para encontrar nuevos valores para cualquier función utilizando el conjunto de valores. Los valores desconocidos en la tabla se encuentran usando la fórmula de interpolación lineal.
-
-La fórmula de interpolación lineal es el método más simple que se utiliza para estimar el valor de una función entre dos valores conocidos. Además, la fórmula de interpolación lineal es un método útil para ajustar curvas utilizando polinomios lineales. Básicamente, el método de interpolación se utiliza para encontrar nuevos valores para cualquier función utilizando el conjunto de valores. Los valores desconocidos en la tabla se encuentran usando la fórmula de interpolación lineal.
-
-## Fórmula
-![Formula](https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQcdgJkeZFq65sgSuHEB_7nEooMkJ1sWJTqF3uidUKv&s)
+La interpolación lineal es un método numérico utilizado para encontrar el valor de una función entre dos puntos dados. Este método asume que la función varía de manera lineal entre los puntos conocidos.
 
 ## Algoritmo
-**Paso 1:** Empezar.
 
-**Paso 2:** Leer los puntos de datos (x 0 , y 0 ) y (x 1 , y 1 ).
+1. Obtener dos puntos conocidos (x0, y0) y (x1, y1).
+2. Calcular la pendiente m de la recta que pasa por los dos puntos: m = (y1 - y0) / (x1 - x0).
+3. Usar la ecuación de la recta para calcular el valor interpolado y en el punto x deseado: y = y0 + m * (x - x0).
 
-**Paso 3:** Leer el valor de las variables independientes, digamos xp cuyo valor correspondiente de dependiente digamos yp debe ser determinado.
+## Metodología
 
-**Paso 4:** Calcula yp = y 0 + ((y 1 - y 0 )/(x 1 - x 0 )) * (x - x 0 ).
+```python
+def linear_interpolation(x0, y0, x1, y1, x):
+    """
+    Función para realizar la interpolación lineal y calcular el valor y en un punto x dado.
 
-**Paso 5:** Muestra el valor de yp como valor interpolado.
+    Parámetros:
+    x0 (float): Coordenada x del primer punto conocido.
+    y0 (float): Coordenada y del primer punto conocido.
+    x1 (float): Coordenada x del segundo punto conocido.
+    y1 (float): Coordenada y del segundo punto conocido.
+    x (float): Valor de x donde se desea calcular el valor interpolado.
 
-## Metodologia 
-![Interpolacion1](https://github.com/Mexta46/Metodos_Numericos/assets/169117716/355c8eb8-b81c-4702-a28a-c620753208d9)  
+    Devuelve:
+    float: Valor interpolado y en el punto x.
+    """
+    m = (y1 - y0) / (x1 - x0)
+    return y0 + m * (x - x0)
 
-## Ejemplos 
+try:
+    x0 = float(input("Ingrese la coordenada x del primer punto: "))
+    y0 = float(input("Ingrese la coordenada y del primer punto: "))
+    x1 = float(input("Ingrese la coordenada x del segundo punto: "))
+    y1 = float(input("Ingrese la coordenada y del segundo punto: "))
+    x = float(input("Ingrese el valor de x para calcular la interpolación: "))
+    
+    result = linear_interpolation(x0, y0, x1, y1, x)
+    print(f"El valor interpolado de y en x = {x} es: {result}")
 
-### Ejercicio 1
+except ValueError as e:
+    print(f"Error: {e}")
+```
 
-x0=1
-y0=-3
-x1=5
-y1=21
+## Análisis y Resultados
 
-RESULTADO
+### Ejemplo
 
-![lineal1](https://github.com/Mexta46/Metodos_Numericos/assets/169117716/149a42ce-59bd-4ee9-b281-81b5d150a15a)
+Para este ejemplo, se tienen los siguientes puntos conocidos:
 
-### Ejercicio 2
+- Primer punto: (1, 2)
+- Segundo punto: (5, 7)
+- Valor de x: 3
 
-x0=1984
-
-y0=3000
-
-x1=1989
-
-y1=4100
-
-x= 1986
-
-RESULTADO
-
-![lineal2](https://github.com/Mexta46/Metodos_Numericos/assets/169117716/3296940d-1881-4322-8c69-246430524280)
-
-### Ejercicio 3 
-
-x0= 0
-
-y0=36
-
-x1=5
-
-y1=37
-
-x= 3.5
-
-RESULTADO
-
-![lineal2](https://github.com/Mexta46/Metodos_Numericos/assets/169117716/4f8b007b-8f77-49db-82f3-602991185d1b)
-
-### Ejercicio 4 
-
-x0= 0.6
-
-y0=124
-
-x1=1.8
-
-y1=69
-
-x= 1.5
-
-RESULTADO
-
-![4](https://github.com/Mexta46/Metodos_Numericos/assets/169117716/fcfc88d3-bcfb-4df4-8a2d-81d7d62423f1)
-
-### Ejersicio 5 
-
-x0= 5
-
-y0=49
-
-x1=25
-
-y1=352
-
-x= 12
-
-RESULTADO
-
-![6](https://github.com/Mexta46/Metodos_Numericos/assets/169117716/4e3cd1cb-58c3-48b3-9e40-912aaa2ec066)
-
-
+Al aplicar la interpolación lineal, se obtiene un valor interpolado de y en x = 3 de 4.25. Este resultado significa que se estima que la función pasa por el punto (3, 4.25), asumiendo una variación lineal entre los puntos conocidos (1, 2) y (5, 7).
