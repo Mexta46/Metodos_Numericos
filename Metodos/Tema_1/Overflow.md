@@ -72,5 +72,72 @@ for i in range(n + 1):
     print(f"{x:.2f}\t{valores[i]:.5e}\t{overflow}")
 ```
 
+### Ejercicio 2: Desbordamiento en una operación exponencial
+Investigar el desbordamiento al calcular una potencia muy grande.
+
+```python
+import numpy as np
+
+# Valor base y exponente
+base = 10
+exponente = 308
+
+try:
+    resultado = np.power(base, exponente)
+    print(f"Resultado de {base}^{exponente}: {resultado}")
+except OverflowError as e:
+    print(f"Error de desbordamiento: {e}")
+```
+
+### Ejercicio 3: Desbordamiento en un bucle factorial
+Calcular el factorial de un número grande y observar el desbordamiento.
+
+```python
+import math
+
+# Número grande para calcular el factorial
+numero = 170
+
+try:
+    resultado = math.factorial(numero)
+    print(f"Factorial de {numero}: {resultado}")
+except OverflowError as e:
+    print(f"Error de desbordamiento: {e}")
+```
+
+### Ejercicio 4: Desbordamiento en una serie geométrica
+Investigar el desbordamiento al sumar una serie geométrica con una razón mayor que 1.
+
+```python
+# Parámetros de la serie geométrica
+a = 1  # Primer término
+r = 1.1  # Razón
+n = 100  # Número de términos
+
+try:
+    suma = sum(a * r**i for i in range(n))
+    print(f"Suma de la serie geométrica: {suma}")
+except OverflowError as e:
+    print(f"Error de desbordamiento: {e}")
+```
+
+### Ejercicio 5: Desbordamiento en una multiplicación iterativa
+Calcular el producto de una serie de números grandes y observar el desbordamiento.
+
+```python
+# Lista de números grandes
+numeros = [1e154, 2e154, 3e154, 4e154]
+
+try:
+    producto = 1
+    for numero in numeros:
+        producto *= numero
+    print(f"Producto de los números: {producto}")
+except OverflowError as e:
+    print(f"Error de desbordamiento: {e}")
+```
+
+
+
 ### Resultados y Análisis
 El código anterior genera una tabla que muestra el valor de la función y si ocurrió overflow en varios puntos del intervalo [0, 50]. Analizando estos resultados, se puede observar cómo y dónde ocurre el overflow, lo que ayuda a entender mejor las limitaciones de representación numérica y el comportamiento de la función en estos casos.
