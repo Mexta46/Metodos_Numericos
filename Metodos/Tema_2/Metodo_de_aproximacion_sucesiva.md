@@ -64,5 +64,120 @@ else:
     print(f"No se alcanzó la convergencia en {iteraciones} iteraciones")
 ```
 
+### Ejercicio 2: Resolver \(x = \cos(x)\) mediante aproximación sucesiva
+Utiliza el método de aproximación sucesiva para encontrar la solución de \(x = \cos(x)\).
+
+```python
+import numpy as np
+
+# Definición de la función g(x) = cos(x)
+def g(x):
+    return np.cos(x)
+
+# Valor inicial
+x0 = 0.5
+
+# Número máximo de iteraciones
+max_iter = 100
+
+# Tolerancia
+tolerancia = 1e-6
+
+# Aproximación sucesiva
+for i in range(max_iter):
+    x1 = g(x0)
+    if abs(x1 - x0) < tolerancia:
+        break
+    x0 = x1
+
+print(f"Solución aproximada: {x1}")
+print(f"Iteraciones: {i+1}")
+```
+
+### Ejercicio 3: Resolver \(x = \sqrt{3 - x}\) mediante aproximación sucesiva
+Utiliza el método de aproximación sucesiva para encontrar la solución de \(x = \sqrt{3 - x}\).
+
+```python
+# Definición de la función g(x) = sqrt(3 - x)
+def g(x):
+    return np.sqrt(3 - x)
+
+# Valor inicial
+x0 = 1.0
+
+# Número máximo de iteraciones
+max_iter = 100
+
+# Tolerancia
+tolerancia = 1e-6
+
+# Aproximación sucesiva
+for i in range(max_iter):
+    x1 = g(x0)
+    if abs(x1 - x0) < tolerancia:
+        break
+    x0 = x1
+
+print(f"Solución aproximada: {x1}")
+print(f"Iteraciones: {i+1}")
+```
+
+### Ejercicio 4: Resolver \(x = \frac{1}{1 + x}\) mediante aproximación sucesiva
+Utiliza el método de aproximación sucesiva para encontrar la solución de \(x = \frac{1}{1 + x}\).
+
+```python
+# Definición de la función g(x) = 1 / (1 + x)
+def g(x):
+    return 1 / (1 + x)
+
+# Valor inicial
+x0 = 0.5
+
+# Número máximo de iteraciones
+max_iter = 100
+
+# Tolerancia
+tolerancia = 1e-6
+
+# Aproximación sucesiva
+for i in range(max_iter):
+    x1 = g(x0)
+    if abs(x1 - x0) < tolerancia:
+        break
+    x0 = x1
+
+print(f"Solución aproximada: {x1}")
+print(f"Iteraciones: {i+1}")
+```
+
+### Ejercicio 5: Resolver \(x = \sin(x) + 0.5\) mediante aproximación sucesiva
+Utiliza el método de aproximación sucesiva para encontrar la solución de \(x = \sin(x) + 0.5\).
+
+```python
+# Definición de la función g(x) = sin(x) + 0.5
+def g(x):
+    return np.sin(x) + 0.5
+
+# Valor inicial
+x0 = 0.5
+
+# Número máximo de iteraciones
+max_iter = 100
+
+# Tolerancia
+tolerancia = 1e-6
+
+# Aproximación sucesiva
+for i in range(max_iter):
+    x1 = g(x0)
+    if abs(x1 - x0) < tolerancia:
+        break
+    x0 = x1
+
+print(f"Solución aproximada: {x1}")
+print(f"Iteraciones: {i+1}")
+```
+
+
 ### Resultados y Análisis
 El código anterior aplica el método de aproximación sucesiva para encontrar una solución de la ecuación \( x = \cos(x) \) a partir de un valor inicial de \( x_0 = 0.5 \). El resultado muestra si el método ha convergido a una solución dentro de un número máximo de iteraciones y una tolerancia especificada.
