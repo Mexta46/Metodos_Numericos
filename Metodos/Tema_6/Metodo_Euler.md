@@ -57,6 +57,19 @@ for point in solution:
     print("x =", point[0], ", y =", point[1])
 ```
 
+
+### Ejercicio 2:
+Resuelve la ecuación diferencial \( \frac{{dy}}{{dx}} = x^2 - y \) con condiciones iniciales \( y(0) = 1 \) en el intervalo \( 0 \leq x \leq 1 \) utilizando el método de Euler con un tamaño de paso \( h = 0.1 \).
+
+### Ejercicio 3:
+Resuelve la ecuación diferencial \( \frac{{dy}}{{dx}} = -2xy \) con condiciones iniciales \( y(0) = 0.5 \) en el intervalo \( 0 \leq x \leq 1 \) utilizando el método de Euler con un tamaño de paso \( h = 0.05 \).
+
+### Ejercicio 4:
+Resuelve la ecuación diferencial \( \frac{{dy}}{{dx}} = x^2 + y^2 \) con condiciones iniciales \( y(0) = 0 \) en el intervalo \( 0 \leq x \leq 1 \) utilizando el método de Euler con un tamaño de paso \( h = 0.1 \).
+
+### Ejercicio 5:
+Resuelve la ecuación diferencial \( \frac{{dy}}{{dx}} = y - x \) con condiciones iniciales \( y(0) = 2 \) en el intervalo \( 0 \leq x \leq 1 \) utilizando el método de Euler con un tamaño de paso \( h = 0.2 \).
+
 ## Análisis y Resultados
 El método de Euler proporciona una solución aproximada a la ecuación diferencial especificada mediante la iteración a través de pequeños pasos desde el punto inicial hasta el punto final deseado. La precisión de la solución depende del tamaño del paso \( h \), donde valores más pequeños de \( h \) generalmente proporcionan resultados más precisos a expensas de una mayor carga computacional.
 
