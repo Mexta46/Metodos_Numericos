@@ -50,7 +50,7 @@ b = math.pi   # Límite superior del intervalo (pi)
 n = 10  # Número de subintervalos (par)
 
 # Calcular la aproximación de la integral
-result = simpson(a, b, n
+result = simpson(a, b, n)
 ````
 
 
