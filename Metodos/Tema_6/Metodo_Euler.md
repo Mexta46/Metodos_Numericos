@@ -65,7 +65,7 @@ Resuelve la ecuación diferencial \( \frac{{dy}}{{dx}} = x^2 - y \) con condicio
 Resuelve la ecuación diferencial \( \frac{{dy}}{{dx}} = -2xy \) con condiciones iniciales \( y(0) = 0.5 \) en el intervalo \( 0 \leq x \leq 1 \) utilizando el método de Euler con un tamaño de paso \( h = 0.05 \).
 
 ### Ejercicio 4:
-Resuelve la ecuación diferencial \( \frac{{dy}}{{dx}} = x^2 + y^2 \) con condiciones iniciales \( y(0) = 0 \) en el intervalo \( 0 \leq x \leq 1 \) utilizando el método de Euler con un tamaño de paso \( h = 0.1 \).
+Resuelve la ecuación diferencial \( \frac{{dy}}{{dx}} = x^2 + y^2 \) con condiciones iniciales \( y(0) = 20 \) en el intervalo \( 0 \leq x \leq 1 \) utilizando el método de Euler con un tamaño de paso \( h = 0.1 \).
 
 ### Ejercicio 5:
 Resuelve la ecuación diferencial \( \frac{{dy}}{{dx}} = y - x \) con condiciones iniciales \( y(0) = 2 \) en el intervalo \( 0 \leq x \leq 1 \) utilizando el método de Euler con un tamaño de paso \( h = 0.2 \).
