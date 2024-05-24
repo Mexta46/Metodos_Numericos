@@ -60,6 +60,11 @@ for point in solution:
     print("x =", point[0], ", y =", point[1])
 ```
 
+##Datos de salida:
+
+
+![](https://github.com/Mexta46/Metodos_Numericos_Tema6/blob/main/Imagenes/Imagenes_Tema6/R1.jpeg)
+
 
 ### Ejercicio 2:
 Resuelve la ecuación diferencial \( \frac{{dy}}{{dx}} = x^2 - y \) con condiciones iniciales \( y(0) = 1 \) en el intervalo \( 0 \leq x \leq 1 \) utilizando el método de Runge-Kutta con un tamaño de paso \( h = 0.1 \).
@@ -93,7 +98,10 @@ for point in solution:
     print("x =", point[0], ", y =", point[1])
 ```
 
----
+##Datos de salida:
+
+
+![](https://github.com/Mexta46/Metodos_Numericos_Tema6/blob/main/Imagenes/Imagenes_Tema6/R2.jpeg)
 
 ### Ejercicio 3:
 Resuelve la ecuación diferencial \( \frac{{dy}}{{dx}} = -2xy \) con condiciones iniciales \( y(0) = 0.5 \) en el intervalo \( 0 \leq x \leq 1 \) utilizando el método de Runge-Kutta con un tamaño de paso \( h = 0.05 \).
@@ -127,7 +135,10 @@ for point in solution:
     print("x =", point[0], ", y =", point[1])
 ```
 
----
+##Datos de salida:
+
+
+![](https://github.com/Mexta46/Metodos_Numericos_Tema6/blob/main/Imagenes/Imagenes_Tema6/R3.jpeg)
 
 ### Ejercicio 4:
 Resuelve la ecuación diferencial \( \frac{{dy}}{{dx}} = x^2 + y^2 \) con condiciones iniciales \( y(0) = 0 \) en el intervalo \( 0 \leq x \leq 1 \) utilizando el método de Runge-Kutta con un tamaño de paso \( h = 0.1 \).
@@ -161,7 +172,10 @@ for point in solution:
     print("x =", point[0], ", y =", point[1])
 ```
 
----
+##Datos de salida:
+
+
+![](https://github.com/Mexta46/Metodos_Numericos_Tema6/blob/main/Imagenes/Imagenes_Tema6/R4.jpeg)
 
 ### Ejercicio 5:
 Resuelve la ecuación diferencial \( \frac{{dy}}{{dx}} = y - x \) con condiciones iniciales \( y(0) = 2 \) en el intervalo \( 0 \leq x \leq 1 \) utilizando el método de Runge-Kutta con un tamaño de paso \( h = 0.2 \).
@@ -195,6 +209,10 @@ for point in solution:
     print("x =", point[0], ", y =", point[1])
 ```
 
+##Datos de salida:
+
+
+![](https://github.com/Mexta46/Metodos_Numericos_Tema6/blob/main/Imagenes/Imagenes_Tema6/R5.jpeg)
 
 
 ## Análisis y Resultados
