@@ -63,8 +63,7 @@ for point in solution:
 ##Datos de salida:
 
 
-
-![](https://github.com/Mexta46/Metodos_Numericos_Tema6/blob/main/Imagenes/Imagenes_tema6/R1.jpeg)
+![](https://github.com/Mexta46/Metodos_Numericos_Tema4/blob/main/Imagenes/Imagenes_tema6/R1.jpeg)
 
 
 ### Ejercicio 2:
