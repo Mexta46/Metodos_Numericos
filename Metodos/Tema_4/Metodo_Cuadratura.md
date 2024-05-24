@@ -56,5 +56,130 @@ print("Aproximación de la integral definida:", aproximacion)
 ```
 
 
+### Datos de salida:
+
+
+![](https://github.com/Mexta46/Metodos_Numericos_Tema4/blob/main/Imagenes/Imagenes_tema4/R1.jpeg)
+
+### Ejercicio 2:
+Aproxima la integral \( \int_0^1 x^2 \, dx \) utilizando el método de cuadratura con la regla del trapecio y un tamaño de paso \( h = 0.1 \).
+
+```python
+def trapezoidal_rule(f, a, b, n):
+    h = (b - a) / n
+    integral = (f(a) + f(b)) / 2
+    for i in range(1, n):
+        integral += f(a + i * h)
+    integral *= h
+    return integral
+
+def f(x):
+    return x**2
+
+a = 0
+b = 1
+n = 10
+
+result = trapezoidal_rule(f, a, b, n)
+print("Aproximación de la integral utilizando el método de cuadratura (Ejercicio 2):", result)
+```
+
+### Datos de salida:
+
+
+![](https://github.com/Mexta46/Metodos_Numericos_Tema4/blob/main/Imagenes/Imagenes_tema4/R2.jpeg)
+
+### Ejercicio 3:
+Aproxima la integral \( \int_0^1 \sin(x) \, dx \) utilizando el método de cuadratura con la regla del trapecio y un tamaño de paso \( h = 0.1 \).
+
+```python
+import math
+
+def trapezoidal_rule(f, a, b, n):
+    h = (b - a) / n
+    integral = (f(a) + f(b)) / 2
+    for i in range(1, n):
+        integral += f(a + i * h)
+    integral *= h
+    return integral
+
+def f(x):
+    return math.sin(x)
+
+a = 0
+b = 1
+n = 10
+
+result = trapezoidal_rule(f, a, b, n)
+print("Aproximación de la integral utilizando el método de cuadratura (Ejercicio 3):", result)
+```
+### Datos de salida:
+
+
+![](https://github.com/Mexta46/Metodos_Numericos_Tema4/blob/main/Imagenes/Imagenes_tema4/R3.jpeg)
+
+### Ejercicio 4:
+Aproxima la integral \( \int_0^1 e^x \, dx \) utilizando el método de cuadratura con la regla del trapecio y un tamaño de paso \( h = 0.1 \).
+
+```python
+import math
+
+def trapezoidal_rule(f, a, b, n):
+    h = (b - a) / n
+    integral = (f(a) + f(b)) / 2
+    for i in range(1, n):
+        integral += f(a + i * h)
+    integral *= h
+    return integral
+
+def f(x):
+    return math.exp(x)
+
+a = 0
+b = 1
+n = 10
+
+result = trapezoidal_rule(f, a, b, n)
+print("Aproximación de la integral utilizando el método de cuadratura (Ejercicio 4):", result)
+```
+
+### Datos de salida:
+
+
+![](https://github.com/Mexta46/Metodos_Numericos_Tema4/blob/main/Imagenes/Imagenes_tema4/R4.jpeg)
+
+
+### Ejercicio 5:
+Aproxima la integral \( \int_0^2 \cos(x) \, dx \) utilizando el método de cuadratura con la regla del trapecio y un tamaño de paso \( h = 0.2 \).
+
+```python
+import math
+
+def trapezoidal_rule(f, a, b, n):
+    h = (b - a) / n
+    integral = (f(a) + f(b)) / 2
+    for i in range(1, n):
+        integral += f(a + i * h)
+    integral *= h
+    return integral
+
+def f(x):
+    return math.cos(x)
+
+a = 0
+b = 2
+n = 10
+
+result = trapezoidal_rule(f, a, b, n)
+print("Aproximación de la integral utilizando el método de cuadratura (Ejercicio 5):", result)
+```
+
+### Datos de salida:
+
+
+![](https://github.com/Mexta46/Metodos_Numericos_Tema4/blob/main/Imagenes/Imagenes_tema4/R5.jpeg)
+
+
+
 ### Resultados y Análisis
 El código anterior aproxima la integral definida de la función seno en el intervalo \([0, \pi]\) utilizando el Método de Cuadratura con la regla de cuadratura de Gauss-Legendre con 3 puntos. Se obtiene una aproximación numérica de la integral definida.
