@@ -60,7 +60,7 @@ for point in solution:
     print("x =", point[0], ", y =", point[1])
 ```
 
-## Datos de salida:
+### Datos de salida:
 
 
 ![](https://github.com/Mexta46/Metodos_Numericos_Tema4/blob/main/Imagenes/Imagenes_tema6/R1.jpeg)
@@ -98,7 +98,7 @@ for point in solution:
     print("x =", point[0], ", y =", point[1])
 ```
 
-## Datos de salida:
+### Datos de salida:
 
 
 ![](https://github.com/Mexta46/Metodos_Numericos_Tema4/blob/main/Imagenes/Imagenes_tema6/R2.jpeg)
@@ -135,7 +135,7 @@ for point in solution:
     print("x =", point[0], ", y =", point[1])
 ```
 
-## Datos de salida:
+### Datos de salida:
 
 
 ![](https://github.com/Mexta46/Metodos_Numericos_Tema4/blob/main/Imagenes/Imagenes_tema6/R3.jpeg)
@@ -172,7 +172,7 @@ for point in solution:
     print("x =", point[0], ", y =", point[1])
 ```
 
-## Datos de salida:
+### Datos de salida:
 
 
 ![](https://github.com/Mexta46/Metodos_Numericos_Tema4/blob/main/Imagenes/Imagenes_tema6/R4.jpeg)
@@ -209,7 +209,7 @@ for point in solution:
     print("x =", point[0], ", y =", point[1])
 ```
 
-## Datos de salida:
+### Datos de salida:
 
 
 ![](https://github.com/Mexta46/Metodos_Numericos_Tema4/blob/main/Imagenes/Imagenes_tema6/R5.jpeg)
