@@ -60,18 +60,144 @@ for point in solution:
     print("x =", point[0], ", y =", point[1])
 ```
 
+¡Claro! Aquí tienes cuatro ejercicios resueltos utilizando el método de Runge-Kutta en Python:
+
+---
 
 ### Ejercicio 2:
 Resuelve la ecuación diferencial \( \frac{{dy}}{{dx}} = x^2 - y \) con condiciones iniciales \( y(0) = 1 \) en el intervalo \( 0 \leq x \leq 1 \) utilizando el método de Runge-Kutta con un tamaño de paso \( h = 0.1 \).
 
+```python
+def runge_kutta_method(f, x0, y0, h, n):
+    results = [(x0, y0)]
+    xn = x0
+    yn = y0
+    for _ in range(n):
+        k1 = h * f(xn, yn)
+        k2 = h * f(xn + h/2, yn + k1/2)
+        k3 = h * f(xn + h/2, yn + k2/2)
+        k4 = h * f(xn + h, yn + k3)
+        yn += (k1 + 2*k2 + 2*k3 + k4) / 6
+        xn += h
+        results.append((xn, yn))
+    return results
+
+def f(x, y):
+    return x**2 - y
+
+x0 = 0
+y0 = 1
+h = 0.1
+n = 10
+
+solution = runge_kutta_method(f, x0, y0, h, n)
+print("Solución aproximada utilizando el método de Runge-Kutta (Ejercicio 2):")
+for point in solution:
+    print("x =", point[0], ", y =", point[1])
+```
+
+---
+
 ### Ejercicio 3:
 Resuelve la ecuación diferencial \( \frac{{dy}}{{dx}} = -2xy \) con condiciones iniciales \( y(0) = 0.5 \) en el intervalo \( 0 \leq x \leq 1 \) utilizando el método de Runge-Kutta con un tamaño de paso \( h = 0.05 \).
+
+```python
+def runge_kutta_method(f, x0, y0, h, n):
+    results = [(x0, y0)]
+    xn = x0
+    yn = y0
+    for _ in range(n):
+        k1 = h * f(xn, yn)
+        k2 = h * f(xn + h/2, yn + k1/2)
+        k3 = h * f(xn + h/2, yn + k2/2)
+        k4 = h * f(xn + h, yn + k3)
+        yn += (k1 + 2*k2 + 2*k3 + k4) / 6
+        xn += h
+        results.append((xn, yn))
+    return results
+
+def f(x, y):
+    return -2 * x * y
+
+x0 = 0
+y0 = 0.5
+h = 0.05
+n = 20
+
+solution = runge_kutta_method(f, x0, y0, h, n)
+print("Solución aproximada utilizando el método de Runge-Kutta (Ejercicio 3):")
+for point in solution:
+    print("x =", point[0], ", y =", point[1])
+```
+
+---
 
 ### Ejercicio 4:
 Resuelve la ecuación diferencial \( \frac{{dy}}{{dx}} = x^2 + y^2 \) con condiciones iniciales \( y(0) = 0 \) en el intervalo \( 0 \leq x \leq 1 \) utilizando el método de Runge-Kutta con un tamaño de paso \( h = 0.1 \).
 
+```python
+def runge_kutta_method(f, x0, y0, h, n):
+    results = [(x0, y0)]
+    xn = x0
+    yn = y0
+    for _ in range(n):
+        k1 = h * f(xn, yn)
+        k2 = h * f(xn + h/2, yn + k1/2)
+        k3 = h * f(xn + h/2, yn + k2/2)
+        k4 = h * f(xn + h, yn + k3)
+        yn += (k1 + 2*k2 + 2*k3 + k4) / 6
+        xn += h
+        results.append((xn, yn))
+    return results
+
+def f(x, y):
+    return x**2 + y**2
+
+x0 = 0
+y0 = 0
+h = 0.1
+n = 10
+
+solution = runge_kutta_method(f, x0, y0, h, n)
+print("Solución aproximada utilizando el método de Runge-Kutta (Ejercicio 4):")
+for point in solution:
+    print("x =", point[0], ", y =", point[1])
+```
+
+---
+
 ### Ejercicio 5:
 Resuelve la ecuación diferencial \( \frac{{dy}}{{dx}} = y - x \) con condiciones iniciales \( y(0) = 2 \) en el intervalo \( 0 \leq x \leq 1 \) utilizando el método de Runge-Kutta con un tamaño de paso \( h = 0.2 \).
+
+```python
+def runge_kutta_method(f, x0, y0, h, n):
+    results = [(x0, y0)]
+    xn = x0
+    yn = y0
+    for _ in range(n):
+        k1 = h * f(xn, yn)
+        k2 = h * f(xn + h/2, yn + k1/2)
+        k3 = h * f(xn + h/2, yn + k2/2)
+        k4 = h * f(xn + h, yn + k3)
+        yn += (k1 + 2*k2 + 2*k3 + k4) / 6
+        xn += h
+        results.append((xn, yn))
+    return results
+
+def f(x, y):
+    return y - x
+
+x0 = 0
+y0 = 2
+h = 0.2
+n = 5
+
+solution = runge_kutta_method(f, x0, y0, h, n)
+print("Solución aproximada utilizando el método de Runge-Kutta (Ejercicio 5):")
+for point in solution:
+    print("x =", point[0], ", y =", point[1])
+```
+
 
 
 ## Análisis y Resultados
