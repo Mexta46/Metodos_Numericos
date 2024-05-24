@@ -59,7 +59,7 @@ print("Aproximación de la integral definida:", aproximacion)
 ### Datos de salida:
 
 
-![](https://github.com/Mexta46/Metodos_Numericos_Tema4/blob/main/Imagenes/Imagenes_tema4/R1.jpeg)
+![](https://github.com/Mexta46/Metodos_Numericos_Tema4/blob/main/Imagenes/Imagenes_Tema4/R1.jpeg)
 
 ### Ejercicio 2:
 Aproxima la integral \( \int_0^1 x^2 \, dx \) utilizando el método de cuadratura con la regla del trapecio y un tamaño de paso \( h = 0.1 \).
@@ -87,7 +87,7 @@ print("Aproximación de la integral utilizando el método de cuadratura (Ejercic
 ### Datos de salida:
 
 
-![](https://github.com/Mexta46/Metodos_Numericos_Tema4/blob/main/Imagenes/Imagenes_tema4/R2.jpeg)
+![](https://github.com/Mexta46/Metodos_Numericos_Tema4/blob/main/Imagenes/Imagenes_Tema4/R2.jpeg)
 
 ### Ejercicio 3:
 Aproxima la integral \( \int_0^1 \sin(x) \, dx \) utilizando el método de cuadratura con la regla del trapecio y un tamaño de paso \( h = 0.1 \).
@@ -116,7 +116,7 @@ print("Aproximación de la integral utilizando el método de cuadratura (Ejercic
 ### Datos de salida:
 
 
-![](https://github.com/Mexta46/Metodos_Numericos_Tema4/blob/main/Imagenes/Imagenes_tema4/R3.jpeg)
+![](https://github.com/Mexta46/Metodos_Numericos_Tema4/blob/main/Imagenes/Imagenes_Tema4/R3.jpeg)
 
 ### Ejercicio 4:
 Aproxima la integral \( \int_0^1 e^x \, dx \) utilizando el método de cuadratura con la regla del trapecio y un tamaño de paso \( h = 0.1 \).
@@ -146,7 +146,7 @@ print("Aproximación de la integral utilizando el método de cuadratura (Ejercic
 ### Datos de salida:
 
 
-![](https://github.com/Mexta46/Metodos_Numericos_Tema4/blob/main/Imagenes/Imagenes_tema4/R4.jpeg)
+![](https://github.com/Mexta46/Metodos_Numericos_Tema4/blob/main/Imagenes/Imagenes_Tema4/R4.jpeg)
 
 
 ### Ejercicio 5:
@@ -177,7 +177,7 @@ print("Aproximación de la integral utilizando el método de cuadratura (Ejercic
 ### Datos de salida:
 
 
-![](https://github.com/Mexta46/Metodos_Numericos_Tema4/blob/main/Imagenes/Imagenes_tema4/R5.jpeg)
+![](https://github.com/Mexta46/Metodos_Numericos_Tema4/blob/main/Imagenes/Imagenes_Tema4/R5.jpeg)
 
 
 
