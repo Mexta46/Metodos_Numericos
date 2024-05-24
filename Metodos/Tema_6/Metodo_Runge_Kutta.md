@@ -60,9 +60,6 @@ for point in solution:
     print("x =", point[0], ", y =", point[1])
 ```
 
-¡Claro! Aquí tienes cuatro ejercicios resueltos utilizando el método de Runge-Kutta en Python:
-
----
 
 ### Ejercicio 2:
 Resuelve la ecuación diferencial \( \frac{{dy}}{{dx}} = x^2 - y \) con condiciones iniciales \( y(0) = 1 \) en el intervalo \( 0 \leq x \leq 1 \) utilizando el método de Runge-Kutta con un tamaño de paso \( h = 0.1 \).
