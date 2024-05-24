@@ -7,7 +7,7 @@ El método de Euler es una técnica numérica para aproximar soluciones de ecuac
 2. Especificar el punto inicial (x0, y0).
 3. Especificar el tamaño del paso h.
 4. Calcular los valores de y en los puntos sucesivos utilizando la fórmula de Euler:
-   - \( y_{n+1} = y_n + h \cdot f(x_n, y_n) \)
+   - \( y(n+1) = yn + h * f(xn, yn) \)
 5. Repetir el paso 4 hasta alcanzar el punto final deseado.
 
 ## Metodología
@@ -59,27 +59,27 @@ for point in solution:
 
 
 ### Ejercicio 1:
-Resuelve la ecuación diferencial \( dy/dx = x^2 - y \) con condiciones iniciales \( y(0) = 1 \) en el intervalo \( 0 < x < 1 \) utilizando el método de Euler con un tamaño de paso \( h = 0.1 \).
+Resuelve la ecuación diferencial \( dy/dx = x^2 - y \) con condiciones iniciales (x(0)=0, y(0) = 1 ) en el intervalo \( 0 < x < 1 \) utilizando el método de Euler con un tamaño de paso \( h = 0.1 \).
 
 ![](https://github.com/Mexta46/Metodos_Numericos/blob/main/Imagenes/Imagenes_tema6/IE1.png)
 
 ### Ejercicio 2:
-Resuelve la ecuación diferencial \( dy/dx = -2xy \) con condiciones iniciales \( y(0) = 0.5 \) en el intervalo \( 0 < x < 1 \) utilizando el método de Euler con un tamaño de paso \( h = 0.05 \).
+Resuelve la ecuación diferencial \( dy/dx = -2xy \) con condiciones iniciales (x(0)=0, y(0) = 0.5 \) en el intervalo \( 0 < x < 1 \) utilizando el método de Euler con un tamaño de paso \( h = 0.05 \).
 
 ![](https://github.com/Mexta46/Metodos_Numericos/blob/main/Imagenes/Imagenes_tema6/IE2.png)
 
 ### Ejercicio 3:
-Resuelve la ecuación diferencial \( dy/dx = x^2 + y^2 \) con condiciones iniciales \( y(0) = 0 \) en el intervalo \( 0 < x < 1 \) utilizando el método de Euler con un tamaño de paso \( h = 0.1 \).
+Resuelve la ecuación diferencial \( dy/dx = x^2 + y^2 \) con condiciones iniciales (x(0)=0, y(0) = 0 ) en el intervalo \( 0 < x < 1 \) utilizando el método de Euler con un tamaño de paso \( h = 0.1 \).
 
 ![](https://github.com/Mexta46/Metodos_Numericos/blob/main/Imagenes/Imagenes_tema6/IE3.png)
 
 ### Ejercicio 4:
-Resuelve la ecuación diferencial \( dy/dx = y - x \) con condiciones iniciales \( y(0) = 2 \) en el intervalo \( 0 < x < 1 \) utilizando el método de Euler con un tamaño de paso \( h = 0.2 \).
+Resuelve la ecuación diferencial \( dy/dx = y - x \) con condiciones iniciales (x(0)=0, y(0) = 2 ) en el intervalo \( 0 < x < 1 \) utilizando el método de Euler con un tamaño de paso \( h = 0.2 \).
 
 ![](https://github.com/Mexta46/Metodos_Numericos/blob/main/Imagenes/Imagenes_tema6/IE4.png)
 
 ### Ejercicio 5:
-Resuelve la ecuación diferencial \( dy/dx = 2y - x \) con condiciones iniciales \( y(0) = 13 \) en el intervalo \( 0 < x < 1 \) utilizando el método de Euler con un tamaño de paso \( h = 6 \).
+Resuelve la ecuación diferencial \( dy/dx = 2y - x \) con condiciones iniciales (x(0)=0, y(0) = 13 ) en el intervalo \( 0 < x < 1 \) utilizando el método de Euler con un tamaño de paso \( h = 6 \).
 
 ![](https://github.com/Mexta46/Metodos_Numericos/blob/main/Imagenes/Imagenes_tema6/IE5.png)
 
