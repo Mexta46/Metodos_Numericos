@@ -68,6 +68,7 @@ Las ecuaciones diferenciales son vitales en la descripción del cambio en sistem
 3. [Metodo Teylor](Metodos/Tema_6/Metodo_Taylor.md)
 
 Equipo conformado por:
+
 Martín César Hernández Sánchez<p/>
 Oliver Espinosa Sánchez<p/>
 Javier Emanuel Sánchez Hernández<p/>
